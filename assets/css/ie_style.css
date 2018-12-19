@@ -1,0 +1,5 @@
+/* ------- IE BROWSER CSS CODE ------- */
+
+/*HOME*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.home-header__right-info img{float: right;max-width: 500px;}.home .home-lineasActuacion__items-box{display: inline-block;}.home .home-lineasActuacion__items-text {display: block;}.home-documentation__right-info img{float: right;max-width: 380px;}.home .home-lineasActuacion__bg-img--bottom {top: inherit;}.content {margin-top: -3px;}.home .home-header__content {display: block;}.home-header__left-info {float: left;}.home-header__right-info {float: right;}}

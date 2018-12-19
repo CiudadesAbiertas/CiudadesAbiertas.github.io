@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+   
+
+<head>
+    <meta charset="utf-8" lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Main JS -->
+    <script defer src="../assets/js/main.min.js"></script>
+
+    <!-- TABS.JS-->
+    <script defer src="../assets/js/tabs.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!--Favicon-->
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" >
+
+
+    <!-- Canonical -->
+    <link rel="canonical" href="index.html">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendor/font-awesome.min.css">
+    
+   
+
+    <!-- JQuery 2.2.4 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>   
+    
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+    
+
+</head>
+
+  <body>
+     
+<header class="navbar">
+
+     <div class="navbar__content">
+          <!-- Logo and title -->
+          <div class="branding">
+               <h1 class="branding__title">
+                    <a href="../index.html" title="Inicio" rel="home" class="main-logo">
+                         <img title="Logo de Ciudades abiertas. Ir a inicio" class="branding__logo" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
+                         <!-- <span class="main-logo-title-text">Ciudades abiertas</span> -->
+                    </a>
+               </h1>
+          </div>
+
+          <!-- Toggle menu -->
+          <nav class="clear menu">
+               <a id="pull" class="toggle" href="#">
+                    <img alt="Abre el menu de navegación" src="../assets/img/cabiertas/menu-icon.svg">
+               </a>
+
+               <!-- Menu -->
+               <div class="menu__container">
+                    <ul class="hide menu__ul-rps">
+                         <li>
+                              <a class="menu__items clear" href="../">Inicio</a>
+                         </li>
+                         <!-- Auto Generation of NORMAL pages in the navbar -->
+                           
+                         <li class="menu__li">
+                              <a href="../datos-abiertos/index.html" class="clear active menu__items">Datos abiertos</a>
+                         </li>
+                            
+                         <li class="menu__li">
+                              <a href="../vocabularios/index.html" class="clear menu__items">Vocabularios</a>
+                         </li>
+                            
+                         <li class="menu__li">
+                              <a href="../participacion/index.html" class="clear menu__items">Participaci&oacute;n</a>
+                         </li>
+                            
+                         <li class="menu__li">
+                              <a href="../tranparencia/index.html" class="clear menu__items">Transparencia</a>
+                         </li>
+                            
+                         <li class="menu__li">
+                              <a href="../contacto/index.html" class="clear menu__items">Contacto</a>
+                         </li>
+                           
+
+                    </ul>
+               </div>
+
+          </nav>
+     </div>
+</header>
+    <div class="content">
+       
+<div class="lineasActuacion">
+     
+     <div class="lineasActuacion__header-img datosAbiertos-img"></div>
+     
+
+     <div class="lineasActuacion__content">
+          <div class="lineasActuacion__logo-box">
+               <img alt="Logo Datos Abiertos" class="lineasActuacion__logo" src="../assets/img/cabiertas/icon-datosAbiertos.svg">
+          </div>
+
+          <div class="lineasActuacion__info">
+               <h2 class="lineasActuacion__title datosAbiertos-color">
+                    Datos Abiertos
+               </h2>
+               <div class="tabs js js-tabs">
+                    <ul role="tablist" class="tabs__list js-tabs-list">
+                         <li class="tabs__list__item js-tablist-item active datosAbiertos-color ">
+                              <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                   <h3 class="tabs__list__title">Descripción</h3>
+                              </a>
+                         </li>
+                         
+
+                    </ul>
+                    <div class="tabs__panel">
+
+                         <div id="tabPanel1" role="tabpanel" aria-labelledby="tab1-label" class="tabs__panel__item js-tabs-panel-item">
+                         
+                         <!--<h2 class="cabiertas__title">GENERAL</h2>-->
+                         <p class="lineasActuacion__sectionText"><p class="cabiertas__text">La línea de actuación de Datos Abiertos dentro del proyecto Ciudades Abiertas se centra en la gestión de datos únicos compartidos, abiertos por defecto, georreferenciados y semánticamente anotados por parte de la ciudad. En este sentido, para la publicación de datos abiertos, se configura un sistema formado por una API REST que permite operaciones de lectura y escritura sobre datos individuales, un punto de acceso SPARQL que posibilita realizar consultas complejas sobre varios conjuntos de datos a la vez y un servicio de indexación y búsqueda que facilita la creación de aplicaciones en las que haya que realizar filtrados e interactuar con los datos.</p></p>
+                         
+                            
+                         <div class="lineasActuacion__section">
+                              
+                              <h2 class="cabiertas__title">Objetivos</h2>
+                              <p class="lineasActuacion__sectionText"><p class="cabiertas__text">El objetivo de este componente es proporcionar los medios técnicos y conceptuales necesarios para que los Ayuntamientos puedan realizar una gestión y publicación de datos abiertos. Con estas herramientas los Ayuntamientos serán capaces de diseñar sus conjuntos de datos abiertos, gestionarlos y publicarlos de manera que puedan ser aprovechados por todos los sectores de la sociedad (ciudadanía, empresas y administraciones públicas).</p></p>
+                              
+                         </div>
+
+                         <h2 class="cabiertas__title">Actuaciones</h2>
+                         
+                         <div class="lineasActuacion__section">
+                               
+                         </div>
+
+
+                         <div class="lineasActuacion__section">
+                              
+                              <p class="lineasActuacion__sectionText"><p class="cabiertas__text">Dentro de la línea de actuación de Datos Abiertos se desarrollan una serie de actuaciones concretas dentro del proyecto.</p></p>
+                              <h2 class="cabiertas__subtitle">Actuación 1: Desarrollo API REST de Datos Reutilizable</h2>
+                              <p class="lineasActuacion__sectionText"><p class="cabiertas__text">El objetivo de este componente es la publicación de una API REST de datos genérica, a partir del desarrollo software que se encuentra desplegado y en producción en Zaragoza, que permita su reutilización tanto en los contextos tecnológicos del resto de los Ayuntamientos participantes como en otras ciudades u organismos. De esta forma se posibilita que otros organismos puedan implantar de forma sencilla un sistema de gestión y publicación de datos abiertos. </p></p>
+                               
+                         </div>
+
+                         <div class="lineasActuacion__section">
+                              
+                              <h2 class="cabiertas__subtitle">Actuación 2: Despliegue del Portal Datos Abiertos de Santiago de Compostela</h2>
+                              <p class="lineasActuacion__sectionText"><p class="cabiertas__text">El objetivo de esta actuación es la puesta en marcha de un portal de datos abiertos, en concreto el de Santiago de Compostela que permitirá la publicación de los datos municipales y facilitará el acceso y la reutilización de los datos por terceros (ciudadanos y empresas), su estructura puede servir de modelo o referencia para ayuntamientos que pretenden poner en marcha su propio portal de datos abiertos.</p></p>
+                               
+                         </div>
+
+                         <div class="lineasActuacion__section">
+                              
+                              <h2 class="cabiertas__subtitle">Actuación 3: Infraestructura Tecnológica para la Publicación de Datos Abiertos</h2>
+                              <p class="lineasActuacion__sectionText"><p class="cabiertas__text">El objetivo de esta actuación es la realización de una propuesta específica de Infraestructura Tecnológica de Datos Abiertos para los Ayuntamientos de A Coruña, Madrid y Santiago de Compostela, que permita la gestión y publicación efectiva de datos abiertos.</p></p>
+                              <p class="lineasActuacion__sectionText"><p class="cabiertas__text">Como eje vertebrador de esta actuación se pretende consensuar la definición de una API común para la publicación de datos abiertos que facilite la posterior explotación de los datos publicados. Se proporcionará la implementación de una arquitectura de referencia para la implantación de esta API, teniendo en cuenta los componentes software que se encuentran en producción en la API que ofrece actualmente el Ayuntamiento de Zaragoza: la API REST, el punto de acceso SPARQL y el servicio de indexación y búsqueda.</p></p>
+                               
+                         </div>
+                         
+                         <div class="lineasActuacion__section">
+                               
+                         </div>
+                         
+                         <div class="lineasActuacion__section">
+                              
+                         </div>
+                          
+                         <div class="lineasActuacion__section">
+                               
+                         </div>
+                         
+                         <div class="lineasActuacion__section">
+                              
+                         </div>
+                          
+                         <div class="lineasActuacion__section">
+                              
+                         </div>
+
+                         <div class="lineasActuacion__section">
+                              
+                         </div>
+
+                         <div class="lineasActuacion__section">
+                              
+                         </div>
+
+                         <div class="lineasActuacion__section">
+                              
+                         </div>
+                         
+                         <h2 class="cabiertas__title">Qué buscamos</h2>
+
+                         <div class="lineasActuacion__section">
+                              
+                              <p class="lineasActuacion__sectionText">
+                              
+                              <ul class="cabiertas__list"> <li>Crear una API REST de datos abiertos: se publicará y documentará el código necesario para la publicación de una API REST de datos abiertos.</li>
+<li>Adaptar bases de datos y anotaciones: se transformarán fuentes de datos procedentes de diversos formatos para su carga en bases de datos relacionales, utilizando el gestor de bases de datos de cada ciudad, y se crearán vistas unificadas que permitan la reutilización de las anotaciones hechas para cada uno de los conjuntos de datos.</li>
+<li>Adaptar procesos de carga e indexación de datos: se adaptarán en un sistema gestor de tripletas RDF para aquellos conjuntos de datos que se hagan disponibles en el punto de acceso SPARQL, y se indexarán para facilitar su búsqueda.</li>
+<li>Adaptar APIs a los catálogos existentes y a la API de CKAN: se realizarán los desarrollos que permitan que los catálogos de datos estén disponibles utilizando la API de CKAN, lo que facilitará su federación en datos.gob.es así como en otros portales agregadores.</li> </ul>
+                              </p>
+                           
+                         </div>
+                        
+                        </div>
+
+                        
+                        <div id="tabPanel6" role="tabPanel" aria-labelledby="tab6-label" class="tabs__panel__item js-tabs-panel-item">
+                         <div class="lineasActuacion__publications">
+                              <h4 class="lineasActuacion__sectionTitle"></h4>
+                              
+                              
+                              
+                              
+
+                         </div>
+                        </div>
+  
+                    </div>    
+                </div>
+                         
+                </div>   
+                      
+                </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+
+
+      <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imágen decorativa en el lateral izquierdo de la pantalla">
+      <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imágen decorativa en el lateral derecho de la pantalla">
+    </div>
+     
+<footer class="footer">
+     <div class="footer__content">
+
+          <div class="footer__logos-container">               
+                
+<div class="footer__logos-box">
+     <ul class="footer__logos-top">
+          <li class="footer__logos footer__logoGobEspaña">
+               <a href="http://www.mineco.gob.es/portal/site/mineco/" target="_blank">
+                    <img title="Logo Gobierno de España. Abre una ventana nueva" src="../assets/img/cabiertas/gobEspana-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
+               </a>
+          </li>
+          <li class="footer__logos footer__logoRed">
+               <a href="https://www.red.es/redes/" target="_blank">
+                    <img title="Logo Red.es. Abre una ventana nueva" src="../assets/img/cabiertas/red-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
+               </a>
+          </li>
+          <li class="footer__logos footer__logoCiudadesInteligentes">
+               <a href="http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes" target="_blank">
+                    <img title="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva" src="../assets/img/cabiertas/ciudadesInteligentes-logo.svg" alt="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva">
+               </a>
+          </li>
+          <li class="footer__logos footer__logoUnionEuropea">
+               <a href="http://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                    <img title="Logo de la Unión Europea. Abre una ventana nueva" src="../assets/img/cabiertas/unionEuropea-logo.svg" alt="Logo de la Unión Europea. Abre una ventana nueva">
+               </a>
+          </li>
+     </ul>
+     <ul class="footer__logos-bottom">
+          <li class="footer__logos footer__logoAcoruña">
+               <a href="https://www.coruna.gal" target="_blank">
+                    <img title="Logo del Ayuntamiento de A Coruña. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntAcoruna-logo.svg" alt="Logo del Ayuntamiento de A coruña. Abre una ventana nueva">
+               </a>
+          </li>
+          <li class="footer__logos footer__logoMadrid">
+               <a href="https://www.madrid.es/" target="_blank">
+                    <img title="Logo del Ayuntamiento de Madrid. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntMadrid-logo.svg" alt="Logo del Ayuntamiento de Madrid. Abre una ventana nueva">
+               </a>
+          </li>
+          <li class="footer__logos footer__logoSantiago">
+               <a href="http://santiagodecompostela.gal/" target="_blank">
+                    <img title="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntSantiagoCompostela-logo.svg" alt="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva">
+               </a>
+          </li>
+          <li class="footer__logos footer__logoZaragoza">
+               <a href="https://www.zaragoza.es/sedeelectronica/" target="_blank">
+                    <img title="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntZaragoza-logo.svg" alt="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva">
+               </a>
+          </li>  
+     </ul>       
+</div>
+
+
+          </div>
+
+          <div class="footer__bottom">
+               <div class="footer__logo-box">
+                    <img class="footer__logoCiudadesAbiertas" title="Logo de Ciudades abiertas. Ir a inicio" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
+               </div>
+               <div class="footer__navbar">
+                    <ul>
+                         <li class="footer__navbar__items"><a href="/avisoLegal/">Aviso legal</a></li>
+                         <li class="footer__navbar__items"><a href="/accesibilidad/">Accesibilidad</a></li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 307.046 311.992">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4c55c;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-3, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-linecap: round;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Logo2" transform="translate(-774.62 -437.199)">
+    <g id="Group_3168" data-name="Group 3168" transform="translate(774.62 437.199)">
+      <path id="Path_262" data-name="Path 262" class="cls-1" d="M173.491,20.727c77.04,23.653,126.9,15.842,139.529,141.091S217.609,352.773,128.549,314.549,24.244,227.389,8.575,128.7,96.452-2.926,173.491,20.727Z" transform="translate(-6.986 -13.394)"/>
+    </g>
+    <g id="Group_3169" data-name="Group 3169" transform="translate(876.297 523.141)">
+      <g id="Ellipse_24" data-name="Ellipse 24" class="cls-2" transform="translate(42.034 53.323)">
+        <circle class="cls-6" cx="27.064" cy="27.064" r="27.064"/>
+        <circle class="cls-7" cx="27.064" cy="27.064" r="25.564"/>
+      </g>
+      <g id="Ellipse_25" data-name="Ellipse 25" class="cls-2" transform="translate(35.637 46.926)">
+        <circle class="cls-6" cx="33.707" cy="33.707" r="33.707"/>
+        <circle class="cls-7" cx="33.707" cy="33.707" r="32.207"/>
+      </g>
+      <rect id="Rectangle_2036" data-name="Rectangle 2036" class="cls-3" width="35.429" height="10.825" transform="translate(10.252 131.475) rotate(-45)"/>
+      <line id="Line_3" data-name="Line 3" class="cls-2" y1="7.735" x2="7.058" transform="translate(38.174 103.76)"/>
+      <line id="Line_4" data-name="Line 4" class="cls-4" x2="73.318" transform="translate(6.851 42.744)"/>
+      <line id="Line_5" data-name="Line 5" class="cls-4" x2="7.873" transform="translate(6.851 30.934)"/>
+      <line id="Line_6" data-name="Line 6" class="cls-4" x2="19.191" transform="translate(23.089 30.934)"/>
+      <line id="Line_7" data-name="Line 7" class="cls-4" x2="29.032" transform="translate(6.851 54.553)"/>
+      <line id="Line_8" data-name="Line 8" class="cls-4" x2="23.619" transform="translate(5.866 83.093)"/>
+      <line id="Line_9" data-name="Line 9" class="cls-4" x2="23.619" transform="translate(5.866 94.411)"/>
+      <path id="Path_3108" data-name="Path 3108" class="cls-5" d="M-16.855,23.612h-10.56s-1.87.309-2.5-3.282c-.053.34.14-113.8.035-113.653-.277-3.954,4.208-3.529,4.208-3.529H26.086l34,33.329V-49.2" transform="translate(29.922 96.865)"/>
+      <path id="Path_3109" data-name="Path 3109" class="cls-4" d="M0,8.656s42.761.129,42.83,0c3.813-.135,3.222-3.075,3.222-3.075V.573" transform="translate(43.756 111.834)"/>
+      <path id="Path_3110" data-name="Path 3110" class="cls-4" d="M1.144-.166V28.718s-.018,3.861,3.88,3.782c.026.029,29.35,0,29.35,0" transform="translate(54.984 1.494)"/>
+    </g>
+  </g>
+</svg>
