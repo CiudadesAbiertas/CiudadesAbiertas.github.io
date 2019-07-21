@@ -1,0 +1,73 @@
+/* ------- IE BROWSER CSS CODE ------- */
+
+/*HOME*/
+
+.home .home-header__right-info img{
+    width: 100% !important
+}
+
+.home .home-lineasActuacion__icon-plus img {
+    top: 0px !important;
+    height: 25px
+}
+.home-documentation__right-info .home-header__img{
+	height: 100% !important
+}
+
+/*Control de dimensiones en los logos del footer*/
+
+.footer__logoGobEspaña img{
+	max-height: 64px
+}
+.footer__logoRed img{
+    max-height: 23px
+}
+.footer__logoCiudadesInteligentes img{
+	max-height: 65px
+}
+.footer__logoUnionEuropea img{
+	max-height: 81px
+}
+
+.footer__logos-bottom .footer__logos img{
+	max-height: 62px !important
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.footer__logoGobEspaña img{
+		max-height: 40px
+	}
+	.footer__logoRed img{
+		max-height: 15px
+	}
+	.footer__logoCiudadesInteligentes img{
+		max-height: 35px
+	}
+	.footer__logoUnionEuropea img{
+		max-height: 50px
+	}
+
+	.footer__logos-bottom .footer__logos img{
+		max-height: 35.5px !important
+	}
+}
+@media (max-width: 768px) {
+	.footer__logoGobEspaña img{
+		max-height: 58.5px
+	}
+	.footer__logoRed img{
+		max-height: 19px
+	}
+	.footer__logoCiudadesInteligentes img{
+		max-height: 51px
+	}
+	.footer__logoUnionEuropea img{
+		max-height: 65px
+	}
+	.footer__logos-bottom .footer__logos img{
+		max-height: 51px !important
+	}
+	.home__text{
+		margin-bottom: 2.5rem !important
+	}
+}
