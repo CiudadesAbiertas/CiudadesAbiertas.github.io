@@ -124,8 +124,11 @@
                                    <h3 class="tabs__list__title">Descripción</h3>
                               </a>
                          </li>
-
-
+                         <li class="tabs__list__item js-tablist-item transparencia-color ">
+                              <a href="#" title="Visualizaciones" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                   <h3 class="tabs__list__title">Visualizaciones</h3>
+                              </a>
+                         </li>
                     </ul>
                     <div class="tabs__panel">
 
@@ -201,13 +204,61 @@
                         </div>
 
 
-                        <div id="tabPanel6" role="tabPanel" aria-labelledby="tab6-label" class="tabs__panel__item js-tabs-panel-item">
-                         <div class="lineasActuacion__publications">
-                              <h4 class="lineasActuacion__sectionTitle"></h4>
+                        <div id="tabPanel4" role="tabpanel" aria-labelledby="tab4-label" class="tabs__panel__item js-tabs-panel-item">
 
+                          <div class="lineasActuacion__section">
+                            <p class="cabiertas__text">Dentro de esta actuación se exploran diferentes vías para facilitar la visualización de los conjuntos de datos. La actuación, a su vez, se divide en 3 subactuaciones con objetivos diferenciados.</p>
+                          </div>
 
+                          <div class="lineasActuacion__section">
+                            <h2 class="cabiertas__title">Visualizaciones mediante sistemas externos</h2>
+                            <p class="cabiertas__text" style="margin-bottom: 15px;">El objetivo de esta actuación es analizar las plataformas existentes y diseñar cómo se debería realizar la integración de las mismas con un portal de datos abiertos para permitir la visualización de sus conjuntos de datos utilizando estas herramientas externas. De entre las herramientas analizadas, se han seleccionado aquéllas que permiten el funcionamiento descrito. En concreto, las herramientas de visualización debían cumplir con dos requisitos:</p>
+                            <ol class="lista__custom__second">
+                              <li class="list__element__numbered">
+                                <div class="lineasActuacion__section">La integración debía funcionar con simples enlaces a sitios web sin necesidad de descargar ningún software.</div>
+                              </li>
+                              <li class="list__element__numbered">
+                                <div class="lineasActuacion__section">En la invocación sólo debía ser necesario pasar como parámetro la URL de descarga del fichero de los datos.</div>
+                              </li>
+                            </ol>
+                            <p class="cabiertas__text" style="margin-bottom: 15px;">Las herramientas que fueron seleccionadas tras este estudio son las siguientes:</p>
+                            <ul class="cabiertas__list">
+                              <li><a href="https://plot.ly/" target="_blank">Plotly</a>: facilita la creación de una gran variedad de visualizaciones interactivas de datos para la web. Acepta ficheros en los siguientes formatos: CSV, TSV, XLS, XLSX.</li>
+                              <li><a href="https://carto.com/" target="_blank">Carto</a>: a partir de los datos, genera mapas interactivos basados en la ubicación. Acepta ficheros en los siguientes formatos: CSV, XLS, XLSX, KML (Google Earth), KMZ, GeoJSON, SHP.</li>
+                              <li><a href="http://geojson.io" target="_blank">Geojson.io</a>: permite visualizar y editar datos geográficos en formato GeoJSON, así como exportar a un gran número de formatos.</li>
+                            </ul>
+                            <p class="cabiertas__text">Adicionalmente se ha desarrollado una extensión para CKAN del tipo de “Open with Apps” (similar a la que se puede encontrar en <a href="https://www.data.gov/" target="_blank">data.gov</a>) que permite la integración sencilla con este tipo de herramientas. Funcionalmente, la extensión muestra de forma automática un enlace para la visualización de los recursos de CKAN en las herramientas externas de visualización seleccionadas (Plotly, Carto y Geojson.io) dependiendo del formato de los recursos. Si el recurso no es compatible con ninguno de los tipos de fichero contemplados entonces el enlace no se muestra.</p>
+                            <p class="cabiertas__text">La extensión, denominada <strong>“Abrir Con”</strong>, está publicada en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. Para cualquier consulta acerca del funcionamiento de la misma se puede poner en contacto con nosotros a través del <a href="https://ciudadesabiertas.es/contacto/index.html">punto de contacto</a>.</p>
+                          </div>
 
-                         </div>
+                          <div class="lineasActuacion__section">
+                            <h2 class="cabiertas__title">Extensiones de visualización en CKAN</h2>
+                            <p class="cabiertas__text">Dentro del ecosistema de la herramienta de gestión de datos abiertos CKAN se han desarrollado multitud de extensiones, algunas de ellas relacionadas con la visualización de los datos. Dentro de esta actuación se han analizado tanto desde el punto de vista técnico como funcional diversas extensiones de visualización disponibles para poder determinar cuáles son las más adecuadas para su utilización en un portal de datos abiertos basado en CKAN.</p>
+                            <p class="cabiertas__text">En el análisis se han cubierto los siguientes tipos de visualización: tablas, mapas (visualización de información georreferenciada), gráficas y dashboard (tablero de visualizaciones).</p>
+                            <p class="cabiertas__text">Para determinar las extensiones a analizar se han explorado tanto los directorios oficiales de extensiones de CKAN como diversos portales de datos abiertos basados en CKAN, así como otras fuentes de información.</p>
+                          </div>
+
+                          <div class="lineasActuacion__section">
+                            <h2 class="cabiertas__title">Visualizaciones específicas</h2>
+                            <p class="cabiertas__text">La finalidad de esta actuación es el desarrollo de aplicaciones de visualización específicas sobre 4 conjuntos de datos basados en vocabularios: Organización-Organigrama, Contratos Abiertos, Población y Subvenciones. Estas visualizaciones facilitarán la comprensión por parte de la ciudadanía de la información recogida en cada conjunto de datos, por lo que deben ser amigables, usables, fáciles de navegar, accesibles, atractivas visualmente y deben mostrar la información de una forma clara.</p>
+                            <p class="cabiertas__text">Cada aplicación cuenta con diversos componentes que permiten la explotación de la información por vías diferentes y con el nivel de detalle que demande el ciudadano. Así por ejemplo, se dispone de formularios de búsqueda, fichas con la información detallada de un objeto, gráficas de barra, treemaps, mapas geográficos, etc. En las gráficas se incluye la posibilidad de profundizar en los datos mostrados para llegar hasta el último nivel de agregación. Otra funcionalidad interesante es que los resultados de las consultas que se realicen se pueden exportar a formatos reutilizables.</p>
+                            <p class="cabiertas__text">Siguiendo la filosofía del proyecto Ciudades Abiertas, los desarrollos resultantes deben facilitar la implantación de las visualizaciones en cualquier organismo que las desee utilizar. Para conseguirlo las aplicaciones se han desarrollado utilizando tecnología estándar de cliente. Es decir, están basadas en HTML5, CSS y Javascript. Se ha evitado la implementación de lógica en el lado del servidor para eliminar las dependencias con una determinada tecnología de servidor.</p>
+                            <p class="cabiertas__text">Otra medida para eliminar dependencias se fundamenta en que los datos que se muestran en las gráficas se consultan mediante la especificación de API de datos abiertos definida en otra actuación del proyecto, que a su vez está basada en vocabularios consensuados y que permite la descarga de los datos en formatos reutilizables (en concreto, para las visualizaciones se consumen los datos en formato JSON). De esta forma, cualquier organismo que desee reutilizar estas visualizaciones sólo se deberá preocupar en implementar la especificación de la API de Ciudades Abiertas y configurar las visualizaciones para que utilicen esta API.</p>
+                            <p class="cabiertas__text">Las visualizaciones se irán publicando en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. A continuación se detallan las aplicaciones de visualización contempladas en el proyecto.</p>
+                            <h2 class="cabiertas__subtitle">Organización-Organigrama</h2>
+                            <p class="cabiertas__text">Su finalidad es disponer de una visualización que permita a los ciudadanos consultar de forma gráfica e interactiva la información correspondiente a la estructura de un organismo.</p>
+                            <p class="cabiertas__text">En la actualidad, esta visualización se encuentra en fase de revisión y está a la espera de su finalización y publicación.</p>
+                            <h2 class="cabiertas__subtitle">Contratos Abiertos</h2>
+                            <p class="cabiertas__text">Esta visualización contempla la divulgación de datos y documentos de todas las etapas del proceso de contratación con el objetivo de incrementar la transparencia de ésta y permitir un análisis más profundo de los datos de contratación por parte de los ciudadanos.</p>
+                            <p class="cabiertas__text">Por el momento el desarrollo de esta visualización está pendiente de iniciarse.</p>
+                            <h2 class="cabiertas__subtitle">Población</h2>
+                            <p class="cabiertas__text">En el caso de esta visualización es fundamental la representación en mapas de los datos agregados de población con mecanismos de filtrado que permitan seleccionar la información que se desee visualizar.</p>
+                            <p class="cabiertas__text">Por el momento el desarrollo de esta visualización está pendiente de iniciarse.</p>
+                            <h2 class="cabiertas__subtitle">Subvenciones</h2>
+                            <p class="cabiertas__text">Esta visualización permite a los ciudadanos consultar la información sobre las subvenciones concedidas por un municipio y el filtrado de esta información según diversos criterios.</p>
+                            <p class="cabiertas__text">En la actualidad, esta visualización se encuentra en fase de revisión y está a la espera de su finalización y publicación.</p>
+                          </div>
+
                         </div>
 
                     </div>

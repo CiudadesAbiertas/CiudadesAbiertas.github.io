@@ -125,8 +125,18 @@
                               </a>
                          </li>
                          <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                              <a href="#" title="Portal Datos Abiertos" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" aria-controls="tabPanel2">
+                              <a href="#" title="API REST de Datos" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" aria-controls="tabPanel2">
+                                   <h3 class="tabs__list__title">API REST de Datos</h3>
+                              </a>
+                         </li>
+                         <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
+                              <a href="#" title="Portal Datos Abiertos" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" aria-controls="tabPanel3">
                                    <h3 class="tabs__list__title">Portal Datos Abiertos</h3>
+                              </a>
+                         </li>
+                         <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
+                              <a href="#" title="Infraestructura Tecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                   <h3 class="tabs__list__title">Infraestructura Tecnológica</h3>
                               </a>
                          </li>
                     </ul>
@@ -183,7 +193,31 @@
                         </div>
 
 
-                        <div id="tabPanel2" role="tabPanel" aria-labelledby="tab2-label" class="tabs__panel__item js-tabs-panel-item">
+                        <div id="tabPanel2" role="tabpanel" aria-labelledby="tab2-label" class="tabs__panel__item js-tabs-panel-item">
+
+                          <div class="lineasActuacion__section">
+                            <p class="cabiertas__text" style="margin-bottom: 15px;">El Ayuntamiento de Zaragoza dispone de una API REST de Datos que se encuentra disponible para la consulta de los datos que tienen publicados. Partiendo de este desarrollo como base, esta actuación persigue dos objetivos principales:</p>
+                            <ul class="cabiertas__list">
+                              <li>Definición de una especificación de API REST de Datos genérica y reutilizable que pueda ser adoptada por otros organismos para conseguir estandarizar la publicación de datos abiertos.</li>
+                              <li>Desarrollar una Implementación de Referencia de la API REST de Datos a partir del desarrollo del Ayuntamiento de Zaragoza que facilite a los organismos que lo deseen su despliegue para conseguir publicar la API REST de Datos definida.</li>
+                            </ul>
+                            <p class="cabiertas__text">Esta API REST de Datos genérica recibe el nombre de <strong>API Ciudades Abiertas</strong>. Abarca la publicación de datos correspondientes a los 27 vocabularios contemplados en el proyecto (16 previamente existentes y 11 de ellos desarrollados dentro del propio proyecto). Aunque la API se ha diseñado para incluir otros conjuntos de datos, basados o no en vocabularios, de forma sencilla.</p>
+                            <p class="cabiertas__text">La API admite la realización de las operaciones básicas habituales de manipulación de recursos (consultar, crear, editar y eliminar), aunque es decisión de cada organismo el permitir la realización de dichas operaciones. Sobre la API se ha implantado un sistema de seguridad básico que permite, por una parte, solicitar la identificación para todas las operaciones de modificación y escritura. Por otra parte, posibilita limitar el número de peticiones por segundo realizadas tanto de manera anónima como por cada usuario registrado, de forma que se evite afectar a los sistemas internos debido a un número elevado de peticiones.</p>
+                            <p class="cabiertas__text">En cuanto a los formatos contemplados por la API, los datos se pueden solicitar tanto en formatos semánticos (RDF, Turtle, N-Triple, JSON-LD) como en otros formatos reutilizables (JSON, XML, CSV). Por defecto son proporcionados en formato JSON.</p>
+                            <p class="cabiertas__text" style="margin-bottom: 15px;">Los requisitos técnicos para el despliegue de la API son:</p>
+                            <ul class="cabiertas__list">
+                              <li>Java 8 / OpenJDK 11</li>
+                              <li>Tomcat 8.5</li>
+                              <li>Base de datos: Oracle, Sql Server o MySQL</li>
+                            </ul>
+                            <p class="cabiertas__text">Para favorecer la adopción de esta API Ciudades Abiertas, el proceso de instalación de su Implementación de Referencia es fácil y sencillo. La API está organizada de forma modular, lo que permite seleccionar los módulos que se desean utilizar.</p>
+                            <p class="cabiertas__text">Tanto la especificación de la API Ciudades Abiertas como su Implementación de Referencia se encuentran en fase de revisión y aprobación.</p>
+                          </div>
+
+                        </div>
+
+
+                        <div id="tabPanel3" role="tabPanel" aria-labelledby="tab3-label" class="tabs__panel__item js-tabs-panel-item">
 
                            <p class="cabiertas__text">Dentro del proyecto Ciudades Abiertas se ha puesto en marcha el <a href="https://datos.santiagodecompostela.gal" target="_blank">Portal de Datos Abiertos de Santiago de Compostela</a> que permitirá la publicación de los datos municipales y facilitará el acceso y la reutilización de los datos por terceros (ciudadanos y empresas). Su estructura, detallada a continuación, puede servir de modelo o referencia para ayuntamientos que pretendan poner en marcha su propio portal de datos abiertos.</p>
                            <div class="lineasActuacion__section">
@@ -215,6 +249,28 @@
                                <p class="cabiertas__text">El código fuente del proyecto está disponible en <a href="https://github.com/concello-santiago-de-compostela/portal-datos-abertos" target="_blank">GitHub</a>. Se han publicado todas las extensiones desarrolladas para CKAN, así como los módulos contrib, features y theme de Drupal.</p>
                                <p class="cabiertas__text">Para cualquier consulta acerca de la tecnología de la plataforma, puede ponerse en contacto con nosotros a través del <a href="/contacto/index.html">punto de contacto</a>.</p>
                            </div>
+
+                        </div>
+
+
+                        <div id="tabPanel4" role="tabpanel" aria-labelledby="tab4-label" class="tabs__panel__item js-tabs-panel-item">
+
+                          <div class="lineasActuacion__section">
+                            <p class="cabiertas__text">La finalidad de la actuación es realizar una propuesta de infraestructura tecnológica que permita a los Ayuntamientos de A Coruña, Madrid y Santiago de Compostela la gestión y publicación de datos abiertos siguiendo la especificación de la API REST de Datos definida en otra de las actuaciones del proyecto. Aunque la propuesta está adaptada a los ayuntamientos participantes en el proyecto, las conclusiones obtenidas se pueden generalizar para que otros organismos las puedan aplicar en sus propios entornos tecnológicos.</p>
+                            <p class="cabiertas__text">Se cuenta de partida con una serie de requisitos divididos en dos bloques principales. Por una parte se encuentran los requisitos relacionados con el dato: abierto, procesable por defecto, único, compartido, accesible, georreferenciado y descrito semánticamente. Y por otra parte se detallan los elementos y funcionalidades con los que debe contar la infraestructura tecnológica: API REST de Datos, punto de acceso SPARQL, servicio de indexación y búsqueda, integración de nuevas fuentes de datos, mantenimiento y monitorización de los procesos, combinación de información almacenada en distintos repositorios, publicación de versiones o históricos, datos en tiempo real o cuasi-real, operaciones de escritura.</p>
+                            <p class="cabiertas__text" style="margin-bottom: 15px;">Partiendo de estas premisas, dentro del proceso de consultoría se han analizado diversos aspectos tecnológicos en cada uno de los ayuntamientos, recopilando en primer lugar las necesidades de cada ayuntamiento, analizando las soluciones disponibles para cada punto analizado y finalmente proponiendo la solución idónea según el estado de cada ayuntamiento. Las áreas analizadas han sido las siguientes:</p>
+                            <ul class="cabiertas__list">
+                              <li>Fuentes de datos: identificación de los diversos tipos de fuentes de datos en los que se encuentra almacenada la información (bases de datos, repositorios de Big Data, ficheros CSV, ficheros de texto, datos en tiempo real, acceso a través de API’s, etc.). Por cada fuente de datos se analiza el tipo de los datos, su volumetría, la existencia de vocabularios que apliquen a la temática, etc. Aunque el análisis ha sido global, se ha prestado especial atención a los 27 conjuntos de datos contemplados dentro del proyecto.</li>
+                              <li>Procesos batch / ETL’s: análisis de las características y funcionalidades que deben presentar los procesos de extracción de información de las fuentes de datos para su incorporación en el repositorio común, así como de las tecnologías a utilizar.</li>
+                              <li>Repositorio común de datos: análisis de la conveniencia de un repositorio de estas características y de las ventajas y desventajas que conlleva frente a otras aproximaciones. Estudio de las soluciones tecnológicas disponibles para la construcción de un repositorio común semantizado.</li>
+                              <li>API: análisis de las funcionalidades que debe cubrir el API de publicación y acceso a los datos. Se valorará la utilización de otras API’s que constituyan estándares o al menos estándares de facto. Este apartado se relaciona con la API REST de Datos de Ciudades Abiertas puesto que al menos debe existir compatibilidad entre las soluciones que se definan.</li>
+                              <li>Terceras partes: análisis de otros elementos relacionados con la publicación de datos abiertos como pueden ser las visualizaciones, publicaciones y accesos externos. Dentro de este apartado se engloba la disponibilidad de un punto SPARQL para la consulta de los datos.</li>
+                              <li>Indexación de los datos: dentro de la solución se debe incorporar un motor de búsqueda que de soporte a las funcionalidades de búsqueda por texto libre entre los datos publicados.</li>
+                              <li>Tripletas RDF: al trabajar con conjuntos de datos semantizados se generarán ficheros RDF que deben ser gestionados correctamente por la plataforma.</li>
+                            </ul>
+                            <p class="cabiertas__text">Las infraestructuras tecnológicas propuestas dan respuesta a cada uno de los puntos mencionados. En estas soluciones se ha tenido en cuenta tanto la especificación como la implementación de referencia de la API Ciudades Abiertas, que se convierte en el eje vertebrador que posibilitará la utilización de una API común para la publicación de datos abiertos que facilite la posterior explotación de los datos publicados.</p>
+                            <p class="cabiertas__text">Como resultado de este trabajo de consultoría se obtiene un plan estratégico de implementación de las soluciones propuestas en cada uno de los ayuntamientos participantes. El siguiente paso dentro de la actuación es ir abordando cada una de las tareas identificadas en el plan estratégico hasta conseguir implantar en cada ayuntamiento la infraestructura que permita la gestión y publicación de datos abiertos.</p>
+                          </div>
 
                         </div>
 
