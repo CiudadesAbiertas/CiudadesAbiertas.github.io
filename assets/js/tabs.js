@@ -109,13 +109,26 @@ jQuery( document ).ready(function(){
 			$elementsLinks.attr('tabindex', '-1');
 
 
-			//comprobamos si tenemos un elemento activo
-			var $tabListContainerActiveLink = $elem.find( settings.tabsListItem + '.' + settings.active + ' ' + settings.tabsListLink);
-			if ( $tabListContainerActiveLink.length > 0 ) {
-				$tabListContainerActiveLink.click();
-			}else{ //hago click en el último elemento
-				var $lastItem = $elem.find( settings.tabsListItem + ':last');
-				$lastItem.find( settings.tabsListLink ).click();
+			//comprobamos si se está invocando a una pestaña
+			var clicked = false;
+			var hash = window.location.hash;
+			if (hash) {
+				var tabTitle = decodeURIComponent(hash.split("#")[1]);
+				var $tabListContainerInvokedLink = $elem.find('[title="' + tabTitle + '"]');
+				if ( $tabListContainerInvokedLink.length > 0 ) {
+					$tabListContainerInvokedLink.click();
+					clicked = true;
+				}
+			}
+			if (!clicked) {
+				//comprobamos si tenemos un elemento activo
+				var $tabListContainerActiveLink = $elem.find( settings.tabsListItem + '.' + settings.active + ' ' + settings.tabsListLink);
+				if ( $tabListContainerActiveLink.length > 0 ) {
+					$tabListContainerActiveLink.click();
+				}else{ //hago click en el último elemento
+					var $lastItem = $elem.find( settings.tabsListItem + ':last');
+					$lastItem.find( settings.tabsListLink ).click();
+				}
 			}
 		};
 

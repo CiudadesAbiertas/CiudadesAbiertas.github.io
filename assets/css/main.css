@@ -1444,6 +1444,77 @@ video {
     box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.2)
 }
 
+.home__title {
+    font-size: 1.5rem;
+    color: #B73E01;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.home__content {
+    padding-bottom: 0px;
+}
+.novedades__content {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.novedades__subcontent {
+    margin-left: 40px;
+}
+.novedades__text {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.143rem;
+    line-height: 2.143rem;
+    color: #5F6F82;
+    text-align: justify;
+}
+.novedades-header__text {
+    font-size: 1.4rem;
+    color: #0A2240;
+    text-align: justify;
+}
+.novedades__logo-box {
+    display: inline-block;
+    margin-right: 0;
+}
+.novedades__logo {
+    width: 55px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.novedades__title {
+    display: inline-block;
+    font-size: 1.786rem;
+}
+.novedades__title::after {
+    content: ' ';
+    width: 60px;
+    height: 5px;
+    display: block;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+.novedades-datosAbiertos-color::after {
+    background-color: #37B2EF
+}
+.novedades-participacion-color::after {
+    background-color: #FF7F40
+}
+.novedades-transparencia-color::after {
+    background-color: #F2517E
+}
+.novedades-vocabulario-color::after {
+    background-color: #F4C55C
+}
+.novedades-footer {
+    display: block;
+    padding: 4.286rem 1.786rem 1.786rem 1.786rem;
+    background-color: #FAF8F5;
+    font-size: 0.8rem;
+    width: 100%;
+    bottom: 0
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
     .home .home-lineasActuacion__items-text {
         min-height: 220px
