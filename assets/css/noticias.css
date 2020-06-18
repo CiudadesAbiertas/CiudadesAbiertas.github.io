@@ -1,0 +1,147 @@
+.noticia-destacada {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CED2D9;
+}
+
+.noticia-container {
+    margin-top: 40px;
+}
+
+.noticia-category {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.datosAbiertos {
+    background-color: #37B2EF;
+}
+
+.vocabularios {
+    background-color: #FCC442;
+}
+
+.procesos {
+    background-color: #FF7F40;
+}
+
+.transparencia {
+    background-color: #F2517E;
+}
+
+.noticia-header {
+    margin-bottom: 10px;
+}
+
+.noticia-date {
+    font-size: 12px;
+    color: #6C7A8C;
+    display: inline-block;
+}
+
+.noticia-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0A2240;
+}
+
+.noticia-text {
+    font-size: 14px;
+    color: #6C7A8C;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.noticia-enlace {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #006AA0;
+}
+
+.noticiasView-container {
+    padding: 15px;
+    max-width: 1280px;
+    margin: auto;
+    padding-bottom: 370px;
+}
+
+.noticia-container {
+    display: inline-block;
+    max-width: 47%;
+    padding-bottom: 50px;
+    margin-right: 20px;
+}
+
+.noticia-container:last-child {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* FILTER */
+
+.filter-container {
+    margin-top: 50px;
+}
+
+.filter-box {
+    border: 2px solid #5F6F82;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #354860;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.filter-box:last-child {
+    margin-right: 0;
+}
+
+.filter-box.active {
+    background-color: #354860;
+    border-color: #354860;
+    color: #ffffff;
+}
+
+.filter-category {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.filter-category.datosAbiertos {
+    background-color: #37B2EF;
+}
+
+.filter-category.vocabularios {
+    background-color: #FCC442;
+}
+
+.filter-category.procesos {
+    background-color: #FF7F40;
+}
+
+.filter-category.transparencia {
+    background-color: #F2517E;
+}
+
+
+/* //css para detalle de la noticia */
+
+.noticiaDetail-container {
+    padding: 15px;
+    max-width: 1280px;
+    margin: auto;
+    padding-bottom: 370px;
+    margin-top: 20px;
+}
