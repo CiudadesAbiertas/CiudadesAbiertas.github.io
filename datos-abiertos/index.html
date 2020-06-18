@@ -10,18 +10,18 @@
     <!-- Main JS -->
     <script defer src="../assets/js/main.min.js"></script>
 
-    <!-- TABS.JS-->
-    <script defer src="../assets/js/tabs.js"></script>
+    <!-- GENERAL.JS-->
+    <script defer src="../assets/js/general.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
 
     <link rel="stylesheet" href="../assets/css/ie_style.css">
     <link rel="stylesheet" href="../assets/css/responsive_home.css">
-    <link rel="stylesheet" href="../assets/css/old_ie_style.css"/>
+    <link rel="stylesheet" href="../assets/css/old_ie_style.css" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
 
     <!-- Canonical -->
@@ -45,289 +45,333 @@
 
 </head>
 
-  <body>
+<body>
 
-<header class="navbar">
+    <header class="navbar">
 
-     <div class="navbar__content">
-          <!-- Logo and title -->
-          <div class="branding">
-               <h1 class="branding__title">
+        <div class="navbar__content">
+            <!-- Logo and title -->
+            <div class="branding">
+                <h1 class="branding__title">
                     <a href="../index.html" title="Inicio" rel="home" class="main-logo">
-                         <img title="Logo de Ciudades abiertas. Ir a inicio" class="branding__logo" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
-                         <!-- <span class="main-logo-title-text">Ciudades abiertas</span> -->
+                        <img title="Logo de Ciudades abiertas. Ir a inicio" class="branding__logo" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
+                        <!-- <span class="main-logo-title-text">Ciudades abiertas</span> -->
                     </a>
-               </h1>
-          </div>
+                </h1>
+            </div>
 
-          <!-- Toggle menu -->
-          <nav class="clear menu">
-               <a id="pull" class="toggle" href="#">
+            <!-- Toggle menu -->
+            <nav class="clear menu">
+                <a id="pull" class="toggle" href="#">
                     <img alt="Abre el menu de navegación" src="../assets/img/cabiertas/menu-icon.svg">
-               </a>
+                </a>
 
-               <!-- Menu -->
-               <div class="menu__container">
+                <!-- Menu -->
+                <div class="menu__container">
                     <ul class="hide menu__ul-rps">
-                         <li>
-                              <a class="menu__items clear" href="../">Inicio</a>
-                         </li>
-                         <li class="menu__li">
-                              <a href="../presentacion.html" class="clear menu__items">Presentación</a>
-                         </li>
-                         <li class="menu__li">
-                              <a href="../datos-abiertos/index.html" class="clear active menu__items">Datos abiertos</a>
-                         </li>
+                        <li>
+                            <a class="menu__items clear" href="home.html">Inicio</a>
+                        </li>
+                        <li class="menu__li">
+                            <a href="../presentacion.html" class="clear menu__items">¿Qué es?</a>
+                        </li>
+                        <li class="menu__li">
+                            <a href="../noticias.html" class="clear menu__items">Destacamos</a>
+                        </li>
+                        <li class="menu__li">
+                            <a href="../datos-abiertos/index.html" class="clear menu__items active">Datos abiertos</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../vocabularios/index.html" class="clear menu__items">Vocabularios</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../vocabularios/index.html" class="clear menu__items">Vocabularios</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../participacion/index.html" class="clear menu__items">Participaci&oacute;n</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../participacion/index.html" class="clear menu__items">Participaci&oacute;n</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../tranparencia/index.html" class="clear menu__items">Transparencia</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../tranparencia/index.html" class="clear menu__items">Transparencia</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../contacto/index.html" class="clear menu__items">Contacto</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../contacto/index.html" class="clear menu__items">Contacto</a>
+                        </li>
 
 
                     </ul>
-               </div>
+                </div>
 
-          </nav>
-     </div>
-</header>
+            </nav>
+        </div>
+    </header>
     <div class="content">
 
-<div class="lineasActuacion">
+        <div class="lineasActuacion">
 
-     <div class="lineasActuacion__header-img datosAbiertos-img"></div>
+            <div class="lineasActuacion__header-img datosAbiertos-img"></div>
 
 
-     <div class="lineasActuacion__content">
-          <div class="lineasActuacion__logo-box">
-               <img alt="Logo Datos Abiertos" class="lineasActuacion__logo" src="../assets/img/cabiertas/icon-datosAbiertos.svg">
-          </div>
+            <div class="lineasActuacion__content">
+                <div class="lineasActuacion__logo-box">
+                    <img alt="Logo Datos Abiertos" class="lineasActuacion__logo" src="../assets/img/cabiertas/icon-datosAbiertos.svg">
+                </div>
 
-          <div class="lineasActuacion__info">
-               <h2 class="lineasActuacion__title datosAbiertos-color">
-                    Datos Abiertos
-               </h2>
-               <div class="tabs js js-tabs">
-                    <ul role="tablist" class="tabs__list js-tabs-list">
-                         <li class="tabs__list__item js-tablist-item active datosAbiertos-color ">
-                              <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
-                                   <h3 class="tabs__list__title">Descripción</h3>
-                              </a>
-                         </li>
-                         <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                              <a href="#" title="APIOpenCity" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" aria-controls="tabPanel2">
-                                   <h3 class="tabs__list__title">API OpenCity</h3>
-                              </a>
-                         </li>
-                         <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                              <a href="#" title="InfraestructuraTecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
-                                   <h3 class="tabs__list__title">Infraestructura Tecnológica</h3>
-                              </a>
-                         </li>
-                    </ul>
-                    <div class="tabs__panel">
+                <div class="lineasActuacion__info">
+                    <h2 class="lineasActuacion__title datosAbiertos-color">
+                        Datos Abiertos
+                    </h2>
+                    <div class="tabs js js-tabs">
+                        <ul role="tablist" class="tabs__list js-tabs-list">
+                            <li class="tabs__list__item js-tablist-item active datosAbiertos-color ">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                    <h3 class="tabs__list__title">Descripción</h3>
+                                </a>
+                            </li>
+                            <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
+                                <a href="#" title="APIOpenCity" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" aria-controls="tabPanel2">
+                                    <h3 class="tabs__list__title">API OpenCity</h3>
+                                </a>
+                            </li>
+                            <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
+                                <a href="#" title="InfraestructuraTecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                    <h3 class="tabs__list__title">Infraestructura Tecnológica</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tabs__panel">
 
-                        <div id="tabPanel1" role="tabpanel" aria-labelledby="tab1-label" class="tabs__panel__item js-tabs-panel-item">
+                            <div id="tabPanel1" role="tabpanel" aria-labelledby="tab1-label" class="tabs__panel__item js-tabs-panel-item">
 
-                           <p class="cabiertas__text">La línea de actuación de Datos Abiertos dentro del proyecto Ciudades Abiertas se centra en la gestión de datos únicos compartidos, abiertos por defecto, georreferenciados y semánticamente anotados por parte de la ciudad. En este sentido, para la publicación de datos abiertos, se configura un sistema formado por una API REST que permite operaciones de lectura y escritura sobre datos individuales, un punto de acceso SPARQL que posibilita realizar consultas complejas sobre varios conjuntos de datos a la vez y un servicio de indexación y búsqueda que facilita la creación de aplicaciones en las que haya que realizar filtrados e interactuar con los datos.</p>
+                                <p class="cabiertas__text">La línea de actuación de Datos Abiertos dentro del proyecto Ciudades Abiertas se centra en la gestión de datos únicos compartidos, abiertos por defecto, georreferenciados y semánticamente anotados por parte de la ciudad.
+                                    En este sentido, para la publicación de datos abiertos, se configura un sistema formado por una API REST que permite operaciones de lectura y escritura sobre datos individuales, un punto de acceso SPARQL que posibilita
+                                    realizar consultas complejas sobre varios conjuntos de datos a la vez y un servicio de indexación y búsqueda que facilita la creación de aplicaciones en las que haya que realizar filtrados e interactuar con los datos.</p>
 
-                           <div class="lineasActuacion__section">
-                                <h2 class="cabiertas__title">Objetivos</h2>
-                                <p class="cabiertas__text">El objetivo de este componente es proporcionar los medios técnicos y conceptuales necesarios para que los Ayuntamientos puedan realizar una gestión y publicación de datos abiertos. Con estas herramientas los Ayuntamientos serán capaces de diseñar sus conjuntos de datos abiertos, gestionarlos y publicarlos de manera que puedan ser aprovechados por todos los sectores de la sociedad (ciudadanía, empresas y administraciones públicas).</p>
-                           </div>
+                                <div class="lineasActuacion__section">
+                                    <h2 class="cabiertas__title">Objetivos</h2>
+                                    <p class="cabiertas__text">El objetivo de este componente es proporcionar los medios técnicos y conceptuales necesarios para que los Ayuntamientos puedan realizar una gestión y publicación de datos abiertos. Con estas herramientas los Ayuntamientos
+                                        serán capaces de diseñar sus conjuntos de datos abiertos, gestionarlos y publicarlos de manera que puedan ser aprovechados por todos los sectores de la sociedad (ciudadanía, empresas y administraciones públicas).</p>
+                                </div>
 
-                           <h2 class="cabiertas__title">Actuaciones</h2>
+                                <h2 class="cabiertas__title">Actuaciones</h2>
 
-                           <p class="cabiertas__text">Dentro de la línea de actuación de Datos Abiertos se desarrollan una serie de actuaciones concretas dentro del proyecto.</p>
+                                <p class="cabiertas__text">Dentro de la línea de actuación de Datos Abiertos se desarrollan una serie de actuaciones concretas dentro del proyecto.</p>
 
-                           <ol class="lista__custom">
-                             <li class="list__element__numbered">
-                               <div class="lineasActuacion__section">
-                                 <h2 class="cabiertas__subtitle">Desarrollo API REST de Datos Reutilizable</h2>
-                                 <p class="cabiertas__text">El objetivo de este componente es la publicación de una API REST de datos genérica, a partir del desarrollo software que se encuentra desplegado y en producción en Zaragoza, que permita su reutilización tanto en los contextos tecnológicos del resto de los Ayuntamientos participantes como en otras ciudades u organismos. De esta forma se posibilita que otros organismos puedan implantar de forma sencilla un sistema de gestión y publicación de datos abiertos.</p>
-                               </div>
-                             </li>
+                                <ol class="lista__custom">
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Desarrollo API REST de Datos Reutilizable</h2>
+                                            <p class="cabiertas__text">El objetivo de este componente es la publicación de una API REST de datos genérica, a partir del desarrollo software que se encuentra desplegado y en producción en Zaragoza, que permita su reutilización tanto
+                                                en los contextos tecnológicos del resto de los Ayuntamientos participantes como en otras ciudades u organismos. De esta forma se posibilita que otros organismos puedan implantar de forma sencilla un sistema
+                                                de gestión y publicación de datos abiertos.</p>
+                                        </div>
+                                    </li>
 
-                             <li class="list__element__numbered">
-                               <div class="lineasActuacion__section">
-                                 <h2 class="cabiertas__subtitle">Despliegue del Portal Datos Abiertos de Santiago de Compostela</h2>
-                                 <p class="cabiertas__text">El objetivo de esta actuación es la puesta en marcha de un portal de datos abiertos, en concreto el de Santiago de Compostela que permite la publicación de los datos municipales y facilita el acceso y la reutilización de los datos por terceros (ciudadanos y empresas). Su estructura puede servir de modelo o referencia para ayuntamientos que pretenden poner en marcha su propio portal de datos abiertos.</p>
-                                 <p class="cabiertas__text">En <a href="./portalDatosAbiertosSantiago.html">la página sobre la actuación correspondiente al Portal de Datos Abiertos de Santiago de Compostela</a> se puede consultar información detallada.</p>
-                               </div>
-                             </li>
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Despliegue del Portal Datos Abiertos de Santiago de Compostela</h2>
+                                            <p class="cabiertas__text">El objetivo de esta actuación es la puesta en marcha de un portal de datos abiertos, en concreto el de Santiago de Compostela que permite la publicación de los datos municipales y facilita el acceso y la reutilización
+                                                de los datos por terceros (ciudadanos y empresas). Su estructura puede servir de modelo o referencia para ayuntamientos que pretenden poner en marcha su propio portal de datos abiertos.</p>
+                                            <p class="cabiertas__text">En <a href="./portalDatosAbiertosSantiago.html">la página sobre la actuación correspondiente al Portal de Datos Abiertos de Santiago de Compostela</a> se puede consultar información detallada.</p>
+                                        </div>
+                                    </li>
 
-                             <li class="list__element__numbered">
-                               <div class="lineasActuacion__section">
-                                 <h2 class="cabiertas__subtitle">Infraestructura Tecnológica para la Publicación de Datos Abiertos</h2>
-                                 <p class="cabiertas__text">El objetivo de esta actuación es la realización de una propuesta específica de Infraestructura Tecnológica de Datos Abiertos para los Ayuntamientos de A Coruña, Madrid y Santiago de Compostela, que permita la gestión y publicación efectiva de datos abiertos.</p>
-                                 <p class="cabiertas__text">Como eje vertebrador de esta actuación se pretende consensuar la definición de una API común para la publicación de datos abiertos que facilite la posterior explotación de los datos publicados. Se proporcionará la implementación de una arquitectura de referencia para la implantación de esta API, teniendo en cuenta los componentes software que se encuentran en producción en la API que ofrece actualmente el Ayuntamiento de Zaragoza: la API REST, el punto de acceso SPARQL y el servicio de indexación y búsqueda.</p>
-                               </div>
-                             </li>
-                           </ol>
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Infraestructura Tecnológica para la Publicación de Datos Abiertos</h2>
+                                            <p class="cabiertas__text">El objetivo de esta actuación es la realización de una propuesta específica de Infraestructura Tecnológica de Datos Abiertos para los Ayuntamientos de A Coruña, Madrid y Santiago de Compostela, que permita la
+                                                gestión y publicación efectiva de datos abiertos.</p>
+                                            <p class="cabiertas__text">Como eje vertebrador de esta actuación se pretende consensuar la definición de una API común para la publicación de datos abiertos que facilite la posterior explotación de los datos publicados. Se proporcionará
+                                                la implementación de una arquitectura de referencia para la implantación de esta API, teniendo en cuenta los componentes software que se encuentran en producción en la API que ofrece actualmente el Ayuntamiento
+                                                de Zaragoza: la API REST, el punto de acceso SPARQL y el servicio de indexación y búsqueda.</p>
+                                        </div>
+                                    </li>
+                                </ol>
 
-                           <h2 class="cabiertas__title">Qué buscamos</h2>
+                                <h2 class="cabiertas__title">Qué buscamos</h2>
 
-                           <div class="lineasActuacion__section">
-                                <ul class="cabiertas__list">
-                                  <li>Crear una API REST de datos abiertos: se publicará y documentará el código necesario para la publicación de una API REST de datos abiertos.</li>
-                                  <li>Adaptar bases de datos y anotaciones: se transformarán fuentes de datos procedentes de diversos formatos para su carga en bases de datos relacionales, utilizando el gestor de bases de datos de cada ciudad, y se crearán vistas unificadas que permitan la reutilización de las anotaciones hechas para cada uno de los conjuntos de datos.</li>
-                                  <li>Adaptar procesos de carga e indexación de datos: se adaptarán en un sistema gestor de tripletas RDF para aquellos conjuntos de datos que se hagan disponibles en el punto de acceso SPARQL, y se indexarán para facilitar su búsqueda.</li>
-                                  <li>Adaptar APIs a los catálogos existentes y a la API de CKAN: se realizarán los desarrollos que permitan que los catálogos de datos estén disponibles utilizando la API de CKAN, lo que facilitará su federación en datos.gob.es así como en otros portales agregadores.</li>
-                                  <li>Consensuar vocabularios entre diferentes entidades locales para armonizar la publicación de conjuntos de datos de forma homogénea.</li>
-                                </ul>
-                           </div>
+                                <div class="lineasActuacion__section">
+                                    <ul class="cabiertas__list">
+                                        <li>Crear una API REST de datos abiertos: se publicará y documentará el código necesario para la publicación de una API REST de datos abiertos.</li>
+                                        <li>Adaptar bases de datos y anotaciones: se transformarán fuentes de datos procedentes de diversos formatos para su carga en bases de datos relacionales, utilizando el gestor de bases de datos de cada ciudad, y se
+                                            crearán vistas unificadas que permitan la reutilización de las anotaciones hechas para cada uno de los conjuntos de datos.</li>
+                                        <li>Adaptar procesos de carga e indexación de datos: se adaptarán en un sistema gestor de tripletas RDF para aquellos conjuntos de datos que se hagan disponibles en el punto de acceso SPARQL, y se indexarán para facilitar
+                                            su búsqueda.</li>
+                                        <li>Adaptar APIs a los catálogos existentes y a la API de CKAN: se realizarán los desarrollos que permitan que los catálogos de datos estén disponibles utilizando la API de CKAN, lo que facilitará su federación en datos.gob.es
+                                            así como en otros portales agregadores.</li>
+                                        <li>Consensuar vocabularios entre diferentes entidades locales para armonizar la publicación de conjuntos de datos de forma homogénea.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                            <div id="tabPanel2" role="tabpanel" aria-labelledby="tab2-label" class="tabs__panel__item js-tabs-panel-item">
+
+                                <div class="lineasActuacion__section">
+                                    <p class="cabiertas__text" style="margin-bottom: 15px;">El Ayuntamiento de Zaragoza dispone de una API REST de Datos que se encuentra disponible para la consulta de los datos que tienen publicados. Partiendo de este desarrollo como base, esta actuación persigue dos objetivos
+                                        principales:
+                                    </p>
+                                    <ul class="cabiertas__list">
+                                        <li>Definición de una especificación de API REST de Datos genérica y reutilizable que pueda ser adoptada por otros organismos para conseguir estandarizar la publicación de datos abiertos.</li>
+                                        <li>Desarrollar una Implementación de Referencia de la API REST de Datos a partir del desarrollo del Ayuntamiento de Zaragoza que facilite a los organismos que lo deseen su despliegue para conseguir publicar la API
+                                            REST de Datos definida.</li>
+                                    </ul>
+                                    <p class="cabiertas__text">Esta API REST de Datos genérica recibe el nombre de <strong>API Ciudades Abiertas</strong>. Abarca la publicación de datos correspondientes a los 27 vocabularios contemplados en el proyecto (16 previamente existentes
+                                        y 11 de ellos desarrollados dentro del propio proyecto). Aunque la API se ha diseñado para incluir otros conjuntos de datos, basados o no en vocabularios, de forma sencilla.</p>
+                                    <p class="cabiertas__text">La API admite la realización de las operaciones básicas habituales de manipulación de recursos (consultar, crear, editar y eliminar), aunque es decisión de cada organismo el permitir la realización de dichas operaciones.
+                                        Sobre la API se ha implantado un sistema de seguridad básico que permite, por una parte, solicitar la identificación para todas las operaciones de modificación y escritura. Por otra parte, posibilita limitar el
+                                        número de peticiones por segundo realizadas tanto de manera anónima como por cada usuario registrado, de forma que se evite afectar a los sistemas internos debido a un número elevado de peticiones.</p>
+                                    <p class="cabiertas__text">En cuanto a los formatos contemplados por la API, los datos se pueden solicitar tanto en formatos semánticos (RDF, Turtle, N-Triple, JSON-LD) como en otros formatos reutilizables (JSON, XML, CSV). Por defecto son proporcionados
+                                        en formato JSON.</p>
+                                    <p class="cabiertas__text" style="margin-bottom: 15px;">Los requisitos técnicos para el despliegue de la API son:</p>
+                                    <ul class="cabiertas__list">
+                                        <li>Java 8 / OpenJDK 11</li>
+                                        <li>Tomcat 8.5</li>
+                                        <li>Base de datos: Oracle, Sql Server o MySQL</li>
+                                    </ul>
+                                    <p class="cabiertas__text">Para favorecer la adopción de esta API Ciudades Abiertas, el proceso de instalación de su Implementación de Referencia es fácil y sencillo. La API está organizada de forma modular, lo que permite seleccionar los módulos
+                                        que se desean utilizar.</p>
+                                    <p class="cabiertas__text">Tanto la especificación de la API Ciudades Abiertas como su Implementación de Referencia se encuentran en fase de revisión y aprobación.</p>
+                                    <h2 class="cabiertas__title">OpenCity-ext</h2>
+                                    <p class="cabiertas__text">Aunque se está desarrollando el API REST de Datos genérica, la versión existente en el Ayuntamiento de Zaragoza, que se ha usado como base para el nuevo desarrollo, seguirá disponible en <a href="https://www.zaragoza.es/docs-api_sede/"
+                                            target="_blank">https://www.zaragoza.es/docs-api_sede/</a>.</p>
+                                    <p class="cabiertas__text">Esta API REST llamada <strong>opencity-ext</strong>, permite el acceso a los datos de diferentes servicios que el Ayuntamiento de Zaragoza pone a disposición de los usuarios para su consulta y reutilización, mediante
+                                        su aprobación.</p>
+                                    <p class="cabiertas__text">En esta actuación se están realizando trabajos de modularización de ciertos componentes ya desarrollados en Zaragoza. Este trabajo de modularización se está realizando para que puedan ser utilizados de manera independiente
+                                        del resto de componentes existentes en la plataforma, es decir, si un usuario/entidad/organismo quiere utilizar el servicio de Mapas Colaborativos se podrá descargar dicho módulo y no todos los servicios existentes.</p>
+                                    <p class="cabiertas__text">Este proceso de modularización también mantendrá la funcionalidad de acceso al API REST que ya estaba disponible y en uso por reutilizadores de datos y la adecuará, cuando sea necesario, a los vocabularios desarrollados
+                                        dentro del proyecto. De esta manera, se mantiene la funcionalidad ya existente que es esencial para el Ayuntamiento de Zaragoza.</p>
+                                </div>
+
+                            </div>
+
+
+                            <div id="tabPanel4" role="tabpanel" aria-labelledby="tab4-label" class="tabs__panel__item js-tabs-panel-item">
+
+                                <div class="lineasActuacion__section">
+                                    <p class="cabiertas__text">La finalidad de la actuación es realizar una propuesta de infraestructura tecnológica que permita a los Ayuntamientos de A Coruña, Madrid y Santiago de Compostela la gestión y publicación de datos abiertos siguiendo
+                                        la especificación de la API REST de Datos definida en otra de las actuaciones del proyecto. Aunque la propuesta está adaptada a los ayuntamientos participantes en el proyecto, las conclusiones obtenidas se pueden
+                                        generalizar para que otros organismos las puedan aplicar en sus propios entornos tecnológicos.</p>
+                                    <p class="cabiertas__text">Se cuenta de partida con una serie de requisitos divididos en dos bloques principales. Por una parte se encuentran los requisitos relacionados con el dato: abierto, procesable por defecto, único, compartido, accesible,
+                                        georreferenciado y descrito semánticamente. Y por otra parte se detallan los elementos y funcionalidades con los que debe contar la infraestructura tecnológica: API REST de Datos, punto de acceso SPARQL, servicio
+                                        de indexación y búsqueda, integración de nuevas fuentes de datos, mantenimiento y monitorización de los procesos, combinación de información almacenada en distintos repositorios, publicación de versiones o históricos,
+                                        datos en tiempo real o cuasi-real, operaciones de escritura.</p>
+                                    <p class="cabiertas__text" style="margin-bottom: 15px;">Partiendo de estas premisas, dentro del proceso de consultoría se han analizado diversos aspectos tecnológicos en cada uno de los ayuntamientos, recopilando en primer lugar las necesidades de cada ayuntamiento, analizando
+                                        las soluciones disponibles para cada punto analizado y finalmente proponiendo la solución idónea según el estado de cada ayuntamiento. Las áreas analizadas han sido las siguientes:</p>
+                                    <ul class="cabiertas__list">
+                                        <li>Fuentes de datos: identificación de los diversos tipos de fuentes de datos en los que se encuentra almacenada la información (bases de datos, repositorios de Big Data, ficheros CSV, ficheros de texto, datos en tiempo
+                                            real, acceso a través de API’s, etc.). Por cada fuente de datos se analiza el tipo de los datos, su volumetría, la existencia de vocabularios que apliquen a la temática, etc. Aunque el análisis ha sido global,
+                                            se ha prestado especial atención a los 27 conjuntos de datos contemplados dentro del proyecto.</li>
+                                        <li>Procesos batch / ETL’s: análisis de las características y funcionalidades que deben presentar los procesos de extracción de información de las fuentes de datos para su incorporación en el repositorio común, así
+                                            como de las tecnologías a utilizar.</li>
+                                        <li>Repositorio común de datos: análisis de la conveniencia de un repositorio de estas características y de las ventajas y desventajas que conlleva frente a otras aproximaciones. Estudio de las soluciones tecnológicas
+                                            disponibles para la construcción de un repositorio común semantizado.</li>
+                                        <li>API: análisis de las funcionalidades que debe cubrir el API de publicación y acceso a los datos. Se valorará la utilización de otras API’s que constituyan estándares o al menos estándares de facto. Este apartado
+                                            se relaciona con la API REST de Datos de Ciudades Abiertas puesto que al menos debe existir compatibilidad entre las soluciones que se definan.</li>
+                                        <li>Terceras partes: análisis de otros elementos relacionados con la publicación de datos abiertos como pueden ser las visualizaciones, publicaciones y accesos externos. Dentro de este apartado se engloba la disponibilidad
+                                            de un punto SPARQL para la consulta de los datos.</li>
+                                        <li>Indexación de los datos: dentro de la solución se debe incorporar un motor de búsqueda que de soporte a las funcionalidades de búsqueda por texto libre entre los datos publicados.</li>
+                                        <li>Tripletas RDF: al trabajar con conjuntos de datos semantizados se generarán ficheros RDF que deben ser gestionados correctamente por la plataforma.</li>
+                                    </ul>
+                                    <p class="cabiertas__text">Las infraestructuras tecnológicas propuestas dan respuesta a cada uno de los puntos mencionados. En estas soluciones se ha tenido en cuenta tanto la especificación como la implementación de referencia de la API Ciudades
+                                        Abiertas, que se convierte en el eje vertebrador que posibilitará la utilización de una API común para la publicación de datos abiertos que facilite la posterior explotación de los datos publicados.</p>
+                                    <p class="cabiertas__text">Como resultado de este trabajo de consultoría se obtiene un plan estratégico de implementación de las soluciones propuestas en cada uno de los ayuntamientos participantes. El siguiente paso dentro de la actuación es
+                                        ir abordando cada una de las tareas identificadas en el plan estratégico hasta conseguir implantar en cada ayuntamiento la infraestructura que permita la gestión y publicación de datos abiertos.</p>
+                                    <p class="cabiertas__text">Se hace necesario comentar dentro de este apartado de infraestructura tecnológica que el Ayuntamiento de Zaragoza ya dispone de su propia estructura tecnológica, que cumple con los puntos indicados anteriormente (fuente
+                                        de datos, API, tripletas, etc.) que se ha utilizado en el estudio previo realizado para definir la propuesta tecnológica. También se hace necesario destacar que el trabajo de modularización de Sede que se está llevando
+                                        a cabo será compatible con la infraestructura tecnológica actual y añadirá las partes de la propuesta tecnológica descrita anteriormente en aquellos casos que sea necesario.</p>
+                                    <p class="cabiertas__text">Para obtener más información de los módulos de servicios del Ayuntamiento de Zaragoza, se recomienda visitar el apartado "API OpenCity".</p>
+                                </div>
+
+                            </div>
 
                         </div>
-
-
-                        <div id="tabPanel2" role="tabpanel" aria-labelledby="tab2-label" class="tabs__panel__item js-tabs-panel-item">
-
-                          <div class="lineasActuacion__section">
-                            <p class="cabiertas__text" style="margin-bottom: 15px;">El Ayuntamiento de Zaragoza dispone de una API REST de Datos que se encuentra disponible para la consulta de los datos que tienen publicados. Partiendo de este desarrollo como base, esta actuación persigue dos objetivos principales:</p>
-                            <ul class="cabiertas__list">
-                              <li>Definición de una especificación de API REST de Datos genérica y reutilizable que pueda ser adoptada por otros organismos para conseguir estandarizar la publicación de datos abiertos.</li>
-                              <li>Desarrollar una Implementación de Referencia de la API REST de Datos a partir del desarrollo del Ayuntamiento de Zaragoza que facilite a los organismos que lo deseen su despliegue para conseguir publicar la API REST de Datos definida.</li>
-                            </ul>
-                            <p class="cabiertas__text">Esta API REST de Datos genérica recibe el nombre de <strong>API Ciudades Abiertas</strong>. Abarca la publicación de datos correspondientes a los 27 vocabularios contemplados en el proyecto (16 previamente existentes y 11 de ellos desarrollados dentro del propio proyecto). Aunque la API se ha diseñado para incluir otros conjuntos de datos, basados o no en vocabularios, de forma sencilla.</p>
-                            <p class="cabiertas__text">La API admite la realización de las operaciones básicas habituales de manipulación de recursos (consultar, crear, editar y eliminar), aunque es decisión de cada organismo el permitir la realización de dichas operaciones. Sobre la API se ha implantado un sistema de seguridad básico que permite, por una parte, solicitar la identificación para todas las operaciones de modificación y escritura. Por otra parte, posibilita limitar el número de peticiones por segundo realizadas tanto de manera anónima como por cada usuario registrado, de forma que se evite afectar a los sistemas internos debido a un número elevado de peticiones.</p>
-                            <p class="cabiertas__text">En cuanto a los formatos contemplados por la API, los datos se pueden solicitar tanto en formatos semánticos (RDF, Turtle, N-Triple, JSON-LD) como en otros formatos reutilizables (JSON, XML, CSV). Por defecto son proporcionados en formato JSON.</p>
-                            <p class="cabiertas__text" style="margin-bottom: 15px;">Los requisitos técnicos para el despliegue de la API son:</p>
-                            <ul class="cabiertas__list">
-                              <li>Java 8 / OpenJDK 11</li>
-                              <li>Tomcat 8.5</li>
-                              <li>Base de datos: Oracle, Sql Server o MySQL</li>
-                            </ul>
-                            <p class="cabiertas__text">Para favorecer la adopción de esta API Ciudades Abiertas, el proceso de instalación de su Implementación de Referencia es fácil y sencillo. La API está organizada de forma modular, lo que permite seleccionar los módulos que se desean utilizar.</p>
-                            <p class="cabiertas__text">Tanto la especificación de la API Ciudades Abiertas como su Implementación de Referencia se encuentran en fase de revisión y aprobación.</p>
-                            <h2 class="cabiertas__title">OpenCity-ext</h2>
-                            <p class="cabiertas__text">Aunque se está desarrollando el API REST de Datos genérica, la versión existente en el Ayuntamiento de Zaragoza, que se ha usado como base para el nuevo desarrollo, seguirá disponible en <a href="https://www.zaragoza.es/docs-api_sede/" target="_blank">https://www.zaragoza.es/docs-api_sede/</a>.</p>
-                            <p class="cabiertas__text">Esta API REST llamada <strong>opencity-ext</strong>, permite el acceso a los datos de diferentes servicios que el Ayuntamiento de Zaragoza pone a disposición de los usuarios para su consulta y reutilización, mediante su aprobación.</p>
-                            <p class="cabiertas__text">En esta actuación se están realizando trabajos de modularización de ciertos componentes ya desarrollados en Zaragoza. Este trabajo de modularización se está realizando para que puedan ser utilizados de manera independiente del resto de componentes existentes en la plataforma, es decir, si un usuario/entidad/organismo quiere utilizar el servicio de Mapas Colaborativos se podrá descargar dicho módulo y no todos los servicios existentes.</p>
-                            <p class="cabiertas__text">Este proceso de modularización también mantendrá la funcionalidad de acceso al API REST que ya estaba disponible y en uso por reutilizadores de datos y la adecuará, cuando sea necesario, a los vocabularios desarrollados dentro del proyecto. De esta manera, se mantiene la funcionalidad ya existente que es esencial para el Ayuntamiento de Zaragoza.</p>
-                          </div>
-
-                        </div>
-
-
-                        <div id="tabPanel4" role="tabpanel" aria-labelledby="tab4-label" class="tabs__panel__item js-tabs-panel-item">
-
-                          <div class="lineasActuacion__section">
-                            <p class="cabiertas__text">La finalidad de la actuación es realizar una propuesta de infraestructura tecnológica que permita a los Ayuntamientos de A Coruña, Madrid y Santiago de Compostela la gestión y publicación de datos abiertos siguiendo la especificación de la API REST de Datos definida en otra de las actuaciones del proyecto. Aunque la propuesta está adaptada a los ayuntamientos participantes en el proyecto, las conclusiones obtenidas se pueden generalizar para que otros organismos las puedan aplicar en sus propios entornos tecnológicos.</p>
-                            <p class="cabiertas__text">Se cuenta de partida con una serie de requisitos divididos en dos bloques principales. Por una parte se encuentran los requisitos relacionados con el dato: abierto, procesable por defecto, único, compartido, accesible, georreferenciado y descrito semánticamente. Y por otra parte se detallan los elementos y funcionalidades con los que debe contar la infraestructura tecnológica: API REST de Datos, punto de acceso SPARQL, servicio de indexación y búsqueda, integración de nuevas fuentes de datos, mantenimiento y monitorización de los procesos, combinación de información almacenada en distintos repositorios, publicación de versiones o históricos, datos en tiempo real o cuasi-real, operaciones de escritura.</p>
-                            <p class="cabiertas__text" style="margin-bottom: 15px;">Partiendo de estas premisas, dentro del proceso de consultoría se han analizado diversos aspectos tecnológicos en cada uno de los ayuntamientos, recopilando en primer lugar las necesidades de cada ayuntamiento, analizando las soluciones disponibles para cada punto analizado y finalmente proponiendo la solución idónea según el estado de cada ayuntamiento. Las áreas analizadas han sido las siguientes:</p>
-                            <ul class="cabiertas__list">
-                              <li>Fuentes de datos: identificación de los diversos tipos de fuentes de datos en los que se encuentra almacenada la información (bases de datos, repositorios de Big Data, ficheros CSV, ficheros de texto, datos en tiempo real, acceso a través de API’s, etc.). Por cada fuente de datos se analiza el tipo de los datos, su volumetría, la existencia de vocabularios que apliquen a la temática, etc. Aunque el análisis ha sido global, se ha prestado especial atención a los 27 conjuntos de datos contemplados dentro del proyecto.</li>
-                              <li>Procesos batch / ETL’s: análisis de las características y funcionalidades que deben presentar los procesos de extracción de información de las fuentes de datos para su incorporación en el repositorio común, así como de las tecnologías a utilizar.</li>
-                              <li>Repositorio común de datos: análisis de la conveniencia de un repositorio de estas características y de las ventajas y desventajas que conlleva frente a otras aproximaciones. Estudio de las soluciones tecnológicas disponibles para la construcción de un repositorio común semantizado.</li>
-                              <li>API: análisis de las funcionalidades que debe cubrir el API de publicación y acceso a los datos. Se valorará la utilización de otras API’s que constituyan estándares o al menos estándares de facto. Este apartado se relaciona con la API REST de Datos de Ciudades Abiertas puesto que al menos debe existir compatibilidad entre las soluciones que se definan.</li>
-                              <li>Terceras partes: análisis de otros elementos relacionados con la publicación de datos abiertos como pueden ser las visualizaciones, publicaciones y accesos externos. Dentro de este apartado se engloba la disponibilidad de un punto SPARQL para la consulta de los datos.</li>
-                              <li>Indexación de los datos: dentro de la solución se debe incorporar un motor de búsqueda que de soporte a las funcionalidades de búsqueda por texto libre entre los datos publicados.</li>
-                              <li>Tripletas RDF: al trabajar con conjuntos de datos semantizados se generarán ficheros RDF que deben ser gestionados correctamente por la plataforma.</li>
-                            </ul>
-                            <p class="cabiertas__text">Las infraestructuras tecnológicas propuestas dan respuesta a cada uno de los puntos mencionados. En estas soluciones se ha tenido en cuenta tanto la especificación como la implementación de referencia de la API Ciudades Abiertas, que se convierte en el eje vertebrador que posibilitará la utilización de una API común para la publicación de datos abiertos que facilite la posterior explotación de los datos publicados.</p>
-                            <p class="cabiertas__text">Como resultado de este trabajo de consultoría se obtiene un plan estratégico de implementación de las soluciones propuestas en cada uno de los ayuntamientos participantes. El siguiente paso dentro de la actuación es ir abordando cada una de las tareas identificadas en el plan estratégico hasta conseguir implantar en cada ayuntamiento la infraestructura que permita la gestión y publicación de datos abiertos.</p>
-                            <p class="cabiertas__text">Se hace necesario comentar dentro de este apartado de infraestructura tecnológica que el Ayuntamiento de Zaragoza ya dispone de su propia estructura tecnológica, que cumple con los puntos indicados anteriormente (fuente de datos, API, tripletas, etc.) que se ha utilizado en el estudio previo realizado para definir la propuesta tecnológica. También se hace necesario destacar que el trabajo de modularización de Sede que se está llevando a cabo será compatible con la infraestructura tecnológica actual y añadirá las partes de la propuesta tecnológica descrita anteriormente en aquellos casos que sea necesario.</p>
-                            <p class="cabiertas__text">Para obtener más información de los módulos de servicios del Ayuntamiento de Zaragoza, se recomienda visitar el apartado "API OpenCity".</p>
-                          </div>
-
-                        </div>
-
                     </div>
-                </div>
 
                 </div>
 
-                </div>
-               </div>
-          </div>
-     </div>
-</div>
-
-
-
-      <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imágen decorativa en el lateral izquierdo de la pantalla">
-      <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imágen decorativa en el lateral derecho de la pantalla">
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
-<footer class="footer">
-     <div class="footer__content">
-
-          <div class="footer__logos-container">
-
-<div class="footer__logos-box">
-     <ul class="footer__logos-top">
-          <li class="footer__logos footer__logoGobEspaña">
-               <a href="http://www.mineco.gob.es/portal/site/mineco/" target="_blank">
-                    <img title="Logo Gobierno de España. Abre una ventana nueva" src="../assets/img/cabiertas/gobEspana-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoRed">
-               <a href="https://www.red.es/redes/" target="_blank">
-                    <img title="Logo Red.es. Abre una ventana nueva" src="../assets/img/cabiertas/red-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoCiudadesInteligentes">
-               <a href="http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes" target="_blank">
-                    <img title="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva" src="../assets/img/cabiertas/ciudadesInteligentes-logo.svg" alt="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoUnionEuropea">
-               <a href="http://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
-                    <img title="Logo de la Unión Europea. Abre una ventana nueva" src="../assets/img/cabiertas/unionEuropea-logo.svg" alt="Logo de la Unión Europea. Abre una ventana nueva">
-               </a>
-          </li>
-     </ul>
-     <ul class="footer__logos-bottom">
-          <li class="footer__logos footer__logoAcoruña">
-               <a href="https://www.coruna.gal" target="_blank">
-                    <img title="Logo del Ayuntamiento de A Coruña. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntAcoruna-logo.svg" alt="Logo del Ayuntamiento de A coruña. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoMadrid">
-               <a href="https://www.madrid.es/" target="_blank">
-                    <img title="Logo del Ayuntamiento de Madrid. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntMadrid-logo.svg" alt="Logo del Ayuntamiento de Madrid. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoSantiago">
-               <a href="http://santiagodecompostela.gal/" target="_blank">
-                    <img title="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntSantiagoCompostela-logo.svg" alt="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoZaragoza">
-               <a href="https://www.zaragoza.es/sedeelectronica/" target="_blank">
-                    <img title="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntZaragoza-logo.svg" alt="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva">
-               </a>
-          </li>
-     </ul>
-</div>
 
 
-          </div>
+    <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imágen decorativa en el lateral izquierdo de la pantalla">
+    <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imágen decorativa en el lateral derecho de la pantalla">
+    </div>
 
-          <div class="footer__bottom">
-               <div class="footer__logo-box">
-                    <img class="footer__logoCiudadesAbiertas" title="Logo de Ciudades abiertas. Ir a inicio" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
-               </div>
-               <div class="footer__navbar">
-                    <ul>
-                         <li class="footer__navbar__items"><a href="/avisoLegal/">Aviso legal</a></li>
-                         <li class="footer__navbar__items"><a href="/accesibilidad/">Accesibilidad</a></li>
+    <footer class="footer">
+        <div class="footer__content">
+
+            <div class="footer__logos-container">
+
+                <div class="footer__logos-box">
+                    <ul class="footer__logos-top">
+                        <li class="footer__logos footer__logoGobEspaña">
+                            <a href="http://www.mineco.gob.es/portal/site/mineco/" target="_blank">
+                                <img title="Logo Gobierno de España. Abre una ventana nueva" src="../assets/img/cabiertas/gobEspana-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoRed">
+                            <a href="https://www.red.es/redes/" target="_blank">
+                                <img title="Logo Red.es. Abre una ventana nueva" src="../assets/img/cabiertas/red-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoCiudadesInteligentes">
+                            <a href="http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes" target="_blank">
+                                <img title="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva" src="../assets/img/cabiertas/ciudadesInteligentes-logo.svg" alt="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoUnionEuropea">
+                            <a href="http://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                                <img title="Logo de la Unión Europea. Abre una ventana nueva" src="../assets/img/cabiertas/unionEuropea-logo.svg" alt="Logo de la Unión Europea. Abre una ventana nueva">
+                            </a>
+                        </li>
                     </ul>
-               </div>
-          </div>
-     </div>
-</footer>
+                    <ul class="footer__logos-bottom">
+                        <li class="footer__logos footer__logoAcoruña">
+                            <a href="https://www.coruna.gal" target="_blank">
+                                <img title="Logo del Ayuntamiento de A Coruña. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntAcoruna-logo.svg" alt="Logo del Ayuntamiento de A coruña. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoMadrid">
+                            <a href="https://www.madrid.es/" target="_blank">
+                                <img title="Logo del Ayuntamiento de Madrid. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntMadrid-logo.svg" alt="Logo del Ayuntamiento de Madrid. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoSantiago">
+                            <a href="http://santiagodecompostela.gal/" target="_blank">
+                                <img title="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntSantiagoCompostela-logo.svg" alt="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoZaragoza">
+                            <a href="https://www.zaragoza.es/sedeelectronica/" target="_blank">
+                                <img title="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntZaragoza-logo.svg" alt="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-  </body>
+
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__logo-box">
+                    <img class="footer__logoCiudadesAbiertas" title="Logo de Ciudades abiertas. Ir a inicio" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
+                </div>
+                <div class="footer__navbar">
+                    <ul>
+                        <li class="footer__navbar__items"><a href="/avisoLegal/">Aviso legal</a></li>
+                        <li class="footer__navbar__items"><a href="/accesibilidad/">Accesibilidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>

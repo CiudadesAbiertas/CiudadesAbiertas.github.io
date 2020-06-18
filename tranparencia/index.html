@@ -10,18 +10,18 @@
     <!-- Main JS -->
     <script defer src="../assets/js/main.min.js"></script>
 
-    <!-- TABS.JS-->
-    <script defer src="../assets/js/tabs.js"></script>
+    <!-- GENERAL.JS-->
+    <script defer src="../assets/js/general.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
 
     <link rel="stylesheet" href="../assets/css/ie_style.css">
     <link rel="stylesheet" href="../assets/css/responsive_home.css">
-    <link rel="stylesheet" href="../assets/css/old_ie_style.css"/>
+    <link rel="stylesheet" href="../assets/css/old_ie_style.css" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
 
     <!-- Canonical -->
@@ -45,310 +45,356 @@
 
 </head>
 
-  <body>
+<body>
 
-<header class="navbar">
+    <header class="navbar">
 
-     <div class="navbar__content">
-          <!-- Logo and title -->
-          <div class="branding">
-               <h1 class="branding__title">
+        <div class="navbar__content">
+            <!-- Logo and title -->
+            <div class="branding">
+                <h1 class="branding__title">
                     <a href="../" title="Inicio" rel="home" class="main-logo">
-                         <img title="Logo de Ciudades abiertas. Ir a inicio" class="branding__logo" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
-                         <!-- <span class="main-logo-title-text">Ciudades abiertas</span> -->
+                        <img title="Logo de Ciudades abiertas. Ir a inicio" class="branding__logo" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
+                        <!-- <span class="main-logo-title-text">Ciudades abiertas</span> -->
                     </a>
-               </h1>
-          </div>
+                </h1>
+            </div>
 
-          <!-- Toggle menu -->
-          <nav class="clear menu">
-               <a id="pull" class="toggle" href="#">
+            <!-- Toggle menu -->
+            <nav class="clear menu">
+                <a id="pull" class="toggle" href="#">
                     <img alt="Abre el menu de navegación" src="../assets/img/cabiertas/menu-icon.svg">
-               </a>
+                </a>
 
-               <!-- Menu -->
-               <div class="menu__container">
+                <!-- Menu -->
+                <div class="menu__container">
                     <ul class="hide menu__ul-rps">
-                         <li>
-                              <a class="menu__items clear" href="../">Inicio</a>
-                         </li>
-                         <li class="menu__li">
-                              <a href="../presentacion.html" class="clear menu__items">Presentación</a>
-                         </li>
-                         <li class="menu__li">
-                              <a href="../datos-abiertos/index.html" class="clear menu__items">Datos abiertos</a>
-                         </li>
+                        <li>
+                            <a class="menu__items clear" href="home.html">Inicio</a>
+                        </li>
+                        <li class="menu__li">
+                            <a href="../presentacion.html" class="clear menu__items">¿Qué es?</a>
+                        </li>
+                        <li class="menu__li">
+                            <a href="../noticias.html" class="clear menu__items">Destacamos</a>
+                        </li>
+                        <li class="menu__li">
+                            <a href="../datos-abiertos/index.html" class="clear menu__items">Datos abiertos</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../vocabularios/index.html" class="clear menu__items">Vocabularios</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../vocabularios/index.html" class="clear menu__items">Vocabularios</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../participacion/index.html" class="clear menu__items">Participaci&oacute;n</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../participacion/index.html" class="clear menu__items">Participaci&oacute;n</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../tranparencia/index.html" class="clear active menu__items">Transparencia</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../tranparencia/index.html" class="clear menu__items active">Transparencia</a>
+                        </li>
 
-                         <li class="menu__li">
-                              <a href="../contacto/index.html" class="clear menu__items">Contacto</a>
-                         </li>
+                        <li class="menu__li">
+                            <a href="../contacto/index.html" class="clear menu__items">Contacto</a>
+                        </li>
 
 
                     </ul>
-               </div>
+                </div>
 
-          </nav>
-     </div>
-</header>
+            </nav>
+        </div>
+    </header>
     <div class="content">
 
-<div class="lineasActuacion">
+        <div class="lineasActuacion">
 
-     <div class="lineasActuacion__header-img transparencia-img"></div>
-
-
-     <div class="lineasActuacion__content">
-          <div class="lineasActuacion__logo-box">
-               <img alt="Logo Transparencia" class="lineasActuacion__logo" src="../assets/img/cabiertas/icon-transparencia.svg">
-          </div>
-
-          <div class="lineasActuacion__info">
-               <h2 class="lineasActuacion__title transparencia-color">
-                    Transparencia
-               </h2>
-               <div class="tabs js js-tabs">
-                    <ul role="tablist" class="tabs__list js-tabs-list">
-                         <li class="tabs__list__item js-tablist-item active transparencia-color ">
-                              <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
-                                   <h3 class="tabs__list__title">Descripción</h3>
-                              </a>
-                         </li>
-                         <li class="tabs__list__item js-tablist-item transparencia-color ">
-                              <a href="#" title="Visualizaciones" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
-                                   <h3 class="tabs__list__title">Visualizaciones</h3>
-                              </a>
-                         </li>
-                    </ul>
-                    <div class="tabs__panel">
-
-                         <div id="tabPanel1" role="tabpanel" aria-labelledby="tab1-label" class="tabs__panel__item js-tabs-panel-item">
-
-                         <p class="cabiertas__text">La transparencia permite a la ciudadanía conocer el funcionamiento interno de las instituciones y cómo se manejan los fondos que éstas reciben. Asimismo, la posibilidad de publicar información histórica y en tiempo real del funcionamiento de diversos servicios urbanos (más allá de información periódica/indicadores) aporta un plus de apertura, articulando la rendición de cuentas al ciudadano por parte de la administración que la práctica, colaborando en el acceso y comprensión de la información municipal y facilitando la comparabilidad.</p>
-
-                         <div class="lineasActuacion__section">
-                              <h2 class="cabiertas__title">Objetivos</h2>
-                              <p class="cabiertas__text">Con Ciudades Abiertas se intenta conseguir la transparencia por defecto. Es decir, que todas las actividades realizadas por el ayuntamiento se proporcionen con total transparencia, acercando de esta manera a la ciudadanía la información relativa a todas las estructuras, procesos, actividades, tareas de control, etc. que se llevan a cabo en el consistorio.</p>
-                              <p class="cabiertas__text">Este componente tiene por objetivo la puesta a disposición por parte de los ayuntamientos de la información de la que disponen para su uso por parte de los ciudadanos, teniendo siempre en cuenta la normativa vigente que sea de aplicación.</p>
-                         </div>
-
-                         <h2 class="cabiertas__title">Actuaciones</h2>
-
-                         <p class="cabiertas__text">Dentro de la línea de actuación de Transparencia se desarrollan una serie de actuaciones concretas dentro del proyecto.</p>
+            <div class="lineasActuacion__header-img transparencia-img"></div>
 
 
+            <div class="lineasActuacion__content">
+                <div class="lineasActuacion__logo-box">
+                    <img alt="Logo Transparencia" class="lineasActuacion__logo" src="../assets/img/cabiertas/icon-transparencia.svg">
+                </div>
 
-                         <ol class="lista__custom">
-                           <li class="list__element__numbered">
-                             <div class="lineasActuacion__section">
-                               <h2 class="cabiertas__subtitle">Análisis para el Desarrollo e Implantación de un Portal de Transparencia tipo basado en Datos Abiertos</h2>
-                               <p class="cabiertas__text">El objetivo es la realización de una guía que describa en detalle cómo implementar un portal de transparencia tipo basado en datos abiertos. Para ello inicialmente se efectuará un análisis del estado del arte en el ámbito de portales de transparencia (estructura, contenido y servicios), analizando iniciativas de referencia a nivel internacional y nacional así como informes o estudios realizados para establecer los criterios a tener en cuenta en la definición del portal de transparencia tipo. </p>
-                               <p class="cabiertas__text">Como resultado se obtendrá una definición funcional (estructura, contenidos y servicios a ofrecer) de las necesidades de un portal de transparencia. En esta definición se tendrán en cuenta aspectos tales como las obligaciones legales, el derecho de acceso a la información, las secciones para la co-creación de indicadores con la ciudadanía, etc.</p>
-                             </div>
-                           </li>
+                <div class="lineasActuacion__info">
+                    <h2 class="lineasActuacion__title transparencia-color">
+                        Transparencia
+                    </h2>
+                    <div class="tabs js js-tabs">
+                        <ul role="tablist" class="tabs__list js-tabs-list">
+                            <li class="tabs__list__item js-tablist-item active transparencia-color ">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                    <h3 class="tabs__list__title">Descripción</h3>
+                                </a>
+                            </li>
+                            <li class="tabs__list__item js-tablist-item transparencia-color ">
+                                <a href="#" title="Visualizaciones" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                    <h3 class="tabs__list__title">Visualizaciones</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tabs__panel">
 
-                           <li class="list__element__numbered">
-                             <div class="lineasActuacion__section">
-                               <h2 class="cabiertas__subtitle">Elaboración Catálogo Común de Indicadores de Transparencia</h2>
-                               <p class="cabiertas__text">El objetivo es realizar una propuesta justificada de al menos 40 indicadores de transparencia que se consideren relevantes y oportunos, determinando las fuentes de datos que pueden dar soporte para la generación de estos indicadores. A continuación, y partiendo de la propuesta anterior, se realizará un Catálogo de 20 Indicadores, a partir de una selección y priorización razonada de los anteriores y teniendo en cuenta la legislación vigente de transparencia, Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno.</p>
-                               <p class="cabiertas__text">Para la elaboración del catálogo final  se tendrán en cuenta los resultados de un taller donde expertos y grupo de interés podrán analizar su contenido.</p>
-                             </div>
-                           </li>
+                            <div id="tabPanel1" role="tabpanel" aria-labelledby="tab1-label" class="tabs__panel__item js-tabs-panel-item">
 
-                           <li class="list__element__numbered">
-                             <div class="lineasActuacion__section">
-                               <h2 class="cabiertas__subtitle">Propuesta de Cuadro de Mando tipo para Transparencia</h2>
-                               <p class="cabiertas__text">El objetivo de este componente es la realización de un análisis que describa cómo implementar un cuadro de mando tipo para transparencia. Se realizará un análisis y propuesta de un cuadro de mando de transparencia que recoja el catálogo de 20 indicadores de transparencia elaborado.</p>
-                               <p class="cabiertas__text">Durante la actuación se realizará un análisis y una propuesta de estructura para crear el cuadro de mando, indicando las visualizaciones básicas que se elijan para cada uno de los indicadores.</p>
-                               <p class="cabiertas__text">Este cuadro de mando tipo permitirá hacer comparaciones de indicadores entre ciudades, gracias a la homogeneización de los datos y al hecho de que estén disponibles en formatos reutilizables.</p>
-                             </div>
-                           </li>
+                                <p class="cabiertas__text">La transparencia permite a la ciudadanía conocer el funcionamiento interno de las instituciones y cómo se manejan los fondos que éstas reciben. Asimismo, la posibilidad de publicar información histórica y en tiempo real
+                                    del funcionamiento de diversos servicios urbanos (más allá de información periódica/indicadores) aporta un plus de apertura, articulando la rendición de cuentas al ciudadano por parte de la administración que la práctica,
+                                    colaborando en el acceso y comprensión de la información municipal y facilitando la comparabilidad.</p>
 
-                           <li class="list__element__numbered">
-                             <div class="lineasActuacion__section">
-                               <h2 class="cabiertas__subtitle">Visualizaciones</h2>
-                               <p class="cabiertas__text">El objetivo de esta actuación es facilitar la consulta visual y análisis de distintos conjuntos de datos previamente normalizados en componentes anteriores. De esta forma se pretende ofrecer la información de forma atractiva, con un lenguaje sencillo y que, de manera interactiva, permita comprender los principales tipos de datos ofrecidos en los portales de datos y transparencia.</p>
-                               <p class="cabiertas__text">Para ello se analizará, desarrollará e implementará:</p>
-                               <ul class="cabiertas__list"> <li>La capacidad de generar visualizaciones mediante sistemas externos a partir de conjuntos de datos que sigan vocabularios consensuados en los portales de datos abiertos de las cuatro ciudades.</li> <li>El desarrollo de visualizaciones específicas para 4 conjuntos de datos seleccionados que sigan vocabularios consensuados (Organización-Organigrama, Contratos Abiertos, Población y Subvenciones).</li> <li>El análisis e implantación de extensiones de visualización de recursos de CKAN.</li> </ul>
-                             </div>
-                           </li>
+                                <div class="lineasActuacion__section">
+                                    <h2 class="cabiertas__title">Objetivos</h2>
+                                    <p class="cabiertas__text">Con Ciudades Abiertas se intenta conseguir la transparencia por defecto. Es decir, que todas las actividades realizadas por el ayuntamiento se proporcionen con total transparencia, acercando de esta manera a la ciudadanía
+                                        la información relativa a todas las estructuras, procesos, actividades, tareas de control, etc. que se llevan a cabo en el consistorio.</p>
+                                    <p class="cabiertas__text">Este componente tiene por objetivo la puesta a disposición por parte de los ayuntamientos de la información de la que disponen para su uso por parte de los ciudadanos, teniendo siempre en cuenta la normativa vigente
+                                        que sea de aplicación.</p>
+                                </div>
 
-                           <li class="list__element__numbered">
-                             <div class="lineasActuacion__section">
-                               <h2 class="cabiertas__subtitle">Organización de Talleres Colaborativos para el desarrollo de Visualizaciones</h2>
-                               <p class="cabiertas__text">Dentro del proyecto se organizarán dos talleres colaborativos (uno en Galicia y otro en Zaragoza) para el desarrollo de visualizaciones. En estos talleres participará la ciudadanía (incluyendo también a profesionales de la información y reutilizadores) para determinar cuáles son las mejores visualizaciones y explicaciones para los datos de distintos tipos que se quieren exponer, de forma que se puedan desplegar estas visualizaciones de manera más comprensible para la mayor parte de la ciudadanía.</p>
-                               <p class="cabiertas__text">Como resultados de los talleres se espera obtener:</p>
-                               <ul class="cabiertas__list"> <li>Definiciones/conceptualizaciones de visualizaciones.</li> <li>Prototipos de visualizaciones o visualizaciones.</li> </ul>
-                               <p class="cabiertas__text">Los contenidos generados durante los talleres en forma de código para las visualizaciones estarán disponibles mediante licencias abiertas que permitan su reutilización por cualquier otro organismo.</p>
-                             </div>
-                           </li>
-                         </ol>
+                                <h2 class="cabiertas__title">Actuaciones</h2>
 
-                         <h2 class="cabiertas__title">Qué buscamos</h2>
+                                <p class="cabiertas__text">Dentro de la línea de actuación de Transparencia se desarrollan una serie de actuaciones concretas dentro del proyecto.</p>
 
-                         <div class="lineasActuacion__section">
-                              <p class="cabiertas__text">La transparencia por defecto en todas las actividades realizadas por los ayuntamientos  permite:</p>
-                              <ul class="cabiertas__list"> <li>Generar un mayor conocimiento y comprensión por parte de la sociedad que facilite su participación en el diseño, ejecución y evaluación de las políticas públicas.</li> <li>Acercar a la ciudadanía la información relativa a todas las estructuras, procesos, actividades, tareas de control, etc. que se llevan a cabo en los ayuntamientos.</li> <li>Homogeneizar datos y permitir la comparación de indicadores de ciudades de la iniciativa y otros municipios que reutilicen las APIs.</li> </ul>
-                         </div>
+
+
+                                <ol class="lista__custom">
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Análisis para el Desarrollo e Implantación de un Portal de Transparencia tipo basado en Datos Abiertos</h2>
+                                            <p class="cabiertas__text">El objetivo es la realización de una guía que describa en detalle cómo implementar un portal de transparencia tipo basado en datos abiertos. Para ello inicialmente se efectuará un análisis del estado del arte
+                                                en el ámbito de portales de transparencia (estructura, contenido y servicios), analizando iniciativas de referencia a nivel internacional y nacional así como informes o estudios realizados para establecer
+                                                los criterios a tener en cuenta en la definición del portal de transparencia tipo. </p>
+                                            <p class="cabiertas__text">Como resultado se obtendrá una definición funcional (estructura, contenidos y servicios a ofrecer) de las necesidades de un portal de transparencia. En esta definición se tendrán en cuenta aspectos tales como
+                                                las obligaciones legales, el derecho de acceso a la información, las secciones para la co-creación de indicadores con la ciudadanía, etc.</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Elaboración Catálogo Común de Indicadores de Transparencia</h2>
+                                            <p class="cabiertas__text">El objetivo es realizar una propuesta justificada de al menos 40 indicadores de transparencia que se consideren relevantes y oportunos, determinando las fuentes de datos que pueden dar soporte para la generación
+                                                de estos indicadores. A continuación, y partiendo de la propuesta anterior, se realizará un Catálogo de 20 Indicadores, a partir de una selección y priorización razonada de los anteriores y teniendo en cuenta
+                                                la legislación vigente de transparencia, Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno.</p>
+                                            <p class="cabiertas__text">Para la elaboración del catálogo final se tendrán en cuenta los resultados de un taller donde expertos y grupo de interés podrán analizar su contenido.</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Propuesta de Cuadro de Mando tipo para Transparencia</h2>
+                                            <p class="cabiertas__text">El objetivo de este componente es la realización de un análisis que describa cómo implementar un cuadro de mando tipo para transparencia. Se realizará un análisis y propuesta de un cuadro de mando de transparencia
+                                                que recoja el catálogo de 20 indicadores de transparencia elaborado.</p>
+                                            <p class="cabiertas__text">Durante la actuación se realizará un análisis y una propuesta de estructura para crear el cuadro de mando, indicando las visualizaciones básicas que se elijan para cada uno de los indicadores.</p>
+                                            <p class="cabiertas__text">Este cuadro de mando tipo permitirá hacer comparaciones de indicadores entre ciudades, gracias a la homogeneización de los datos y al hecho de que estén disponibles en formatos reutilizables.</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Visualizaciones</h2>
+                                            <p class="cabiertas__text">El objetivo de esta actuación es facilitar la consulta visual y análisis de distintos conjuntos de datos previamente normalizados en componentes anteriores. De esta forma se pretende ofrecer la información de
+                                                forma atractiva, con un lenguaje sencillo y que, de manera interactiva, permita comprender los principales tipos de datos ofrecidos en los portales de datos y transparencia.</p>
+                                            <p class="cabiertas__text">Para ello se analizará, desarrollará e implementará:</p>
+                                            <ul class="cabiertas__list">
+                                                <li>La capacidad de generar visualizaciones mediante sistemas externos a partir de conjuntos de datos que sigan vocabularios consensuados en los portales de datos abiertos de las cuatro ciudades.</li>
+                                                <li>El desarrollo de visualizaciones específicas para 4 conjuntos de datos seleccionados que sigan vocabularios consensuados (Organización-Organigrama, Contratos Abiertos, Población y Subvenciones).</li>
+                                                <li>El análisis e implantación de extensiones de visualización de recursos de CKAN.</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="list__element__numbered">
+                                        <div class="lineasActuacion__section">
+                                            <h2 class="cabiertas__subtitle">Organización de Talleres Colaborativos para el desarrollo de Visualizaciones</h2>
+                                            <p class="cabiertas__text">Dentro del proyecto se organizarán dos talleres colaborativos (uno en Galicia y otro en Zaragoza) para el desarrollo de visualizaciones. En estos talleres participará la ciudadanía (incluyendo también a profesionales
+                                                de la información y reutilizadores) para determinar cuáles son las mejores visualizaciones y explicaciones para los datos de distintos tipos que se quieren exponer, de forma que se puedan desplegar estas
+                                                visualizaciones de manera más comprensible para la mayor parte de la ciudadanía.</p>
+                                            <p class="cabiertas__text">Como resultados de los talleres se espera obtener:</p>
+                                            <ul class="cabiertas__list">
+                                                <li>Definiciones/conceptualizaciones de visualizaciones.</li>
+                                                <li>Prototipos de visualizaciones o visualizaciones.</li>
+                                            </ul>
+                                            <p class="cabiertas__text">Los contenidos generados durante los talleres en forma de código para las visualizaciones estarán disponibles mediante licencias abiertas que permitan su reutilización por cualquier otro organismo.</p>
+                                        </div>
+                                    </li>
+                                </ol>
+
+                                <h2 class="cabiertas__title">Qué buscamos</h2>
+
+                                <div class="lineasActuacion__section">
+                                    <p class="cabiertas__text">La transparencia por defecto en todas las actividades realizadas por los ayuntamientos permite:</p>
+                                    <ul class="cabiertas__list">
+                                        <li>Generar un mayor conocimiento y comprensión por parte de la sociedad que facilite su participación en el diseño, ejecución y evaluación de las políticas públicas.</li>
+                                        <li>Acercar a la ciudadanía la información relativa a todas las estructuras, procesos, actividades, tareas de control, etc. que se llevan a cabo en los ayuntamientos.</li>
+                                        <li>Homogeneizar datos y permitir la comparación de indicadores de ciudades de la iniciativa y otros municipios que reutilicen las APIs.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                            <div id="tabPanel4" role="tabpanel" aria-labelledby="tab4-label" class="tabs__panel__item js-tabs-panel-item">
+
+                                <div class="lineasActuacion__section">
+                                    <p class="cabiertas__text">Dentro de esta actuación se exploran diferentes vías para facilitar la visualización de los conjuntos de datos. La actuación, a su vez, se divide en 3 subactuaciones con objetivos diferenciados.</p>
+                                </div>
+
+                                <div class="lineasActuacion__section">
+                                    <h2 class="cabiertas__title">Visualizaciones mediante sistemas externos</h2>
+                                    <p class="cabiertas__text" style="margin-bottom: 15px;">El objetivo de esta actuación es analizar las plataformas existentes y diseñar cómo se debería realizar la integración de las mismas con un portal de datos abiertos para permitir la visualización de sus conjuntos de
+                                        datos utilizando estas herramientas externas. De entre las herramientas analizadas, se han seleccionado aquéllas que permiten el funcionamiento descrito. En concreto, las herramientas de visualización debían cumplir
+                                        con dos requisitos:</p>
+                                    <ol class="lista__custom__second">
+                                        <li class="list__element__numbered">
+                                            <div class="lineasActuacion__section">La integración debía funcionar con simples enlaces a sitios web sin necesidad de descargar ningún software.</div>
+                                        </li>
+                                        <li class="list__element__numbered">
+                                            <div class="lineasActuacion__section">En la invocación sólo debía ser necesario pasar como parámetro la URL de descarga del fichero de los datos.</div>
+                                        </li>
+                                    </ol>
+                                    <p class="cabiertas__text" style="margin-bottom: 15px;">Las herramientas que fueron seleccionadas tras este estudio son las siguientes:</p>
+                                    <ul class="cabiertas__list">
+                                        <li><a href="https://plot.ly/" target="_blank">Plotly</a>: facilita la creación de una gran variedad de visualizaciones interactivas de datos para la web. Acepta ficheros en los siguientes formatos: CSV, TSV, XLS, XLSX.</li>
+                                        <li><a href="https://carto.com/" target="_blank">Carto</a>: a partir de los datos, genera mapas interactivos basados en la ubicación. Acepta ficheros en los siguientes formatos: CSV, XLS, XLSX, KML (Google Earth), KMZ,
+                                            GeoJSON, SHP.</li>
+                                        <li><a href="http://geojson.io" target="_blank">Geojson.io</a>: permite visualizar y editar datos geográficos en formato GeoJSON, así como exportar a un gran número de formatos.</li>
+                                    </ul>
+                                    <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Integracion_Sistemas_Visualizacion-121-17-SP.pdf" target="_blank">Informe con el Análisis de Sistemas Externos de Visualización</a>                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
+                                    <p class="cabiertas__text">Adicionalmente se ha desarrollado una extensión para CKAN del tipo de “Open with Apps” (similar a la que se puede encontrar en <a href="https://www.data.gov/" target="_blank">data.gov</a>) que permite la integración
+                                        sencilla con este tipo de herramientas. Funcionalmente, la extensión muestra de forma automática un enlace para la visualización de los recursos de CKAN en las herramientas externas de visualización seleccionadas
+                                        (Plotly, Carto y Geojson.io) dependiendo del formato de los recursos. Si el recurso no es compatible con ninguno de los tipos de fichero contemplados entonces el enlace no se muestra.</p>
+                                    <p class="cabiertas__text">La extensión, denominada <strong>“Abrir Con”</strong>, está publicada en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. Para cualquier consulta acerca del funcionamiento
+                                        de la misma se puede poner en contacto con nosotros a través del <a href="https://ciudadesabiertas.es/contacto/index.html">punto de contacto</a>.</p>
+                                </div>
+
+                                <div class="lineasActuacion__section">
+                                    <h2 class="cabiertas__title">Extensiones de visualización en CKAN</h2>
+                                    <p class="cabiertas__text">Dentro del ecosistema de la herramienta de gestión de datos abiertos CKAN se han desarrollado multitud de extensiones, algunas de ellas relacionadas con la visualización de los datos. Dentro de esta actuación se han
+                                        analizado tanto desde el punto de vista técnico como funcional diversas extensiones de visualización disponibles para poder determinar cuáles son las más adecuadas para su utilización en un portal de datos abiertos
+                                        basado en CKAN.</p>
+                                    <p class="cabiertas__text">En el análisis se han cubierto los siguientes tipos de visualización: tablas, mapas (visualización de información georreferenciada), gráficas y dashboard (tablero de visualizaciones).</p>
+                                    <p class="cabiertas__text">Para determinar las extensiones a analizar se han explorado tanto los directorios oficiales de extensiones de CKAN como diversos portales de datos abiertos basados en CKAN, así como otras fuentes de información.</p>
+                                    <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Extensiones_CKAN-121-17-SP.pdf" target="_blank">Informe con el Análisis de las Extensiones de Visualización para CKAN</a>                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
+                                </div>
+
+                                <div class="lineasActuacion__section">
+                                    <h2 class="cabiertas__title">Visualizaciones específicas</h2>
+                                    <p class="cabiertas__text">La finalidad de esta actuación es el desarrollo de aplicaciones de visualización específicas sobre 4 conjuntos de datos basados en vocabularios: Organización-Organigrama, Contratos Abiertos, Población y Subvenciones.
+                                        Estas visualizaciones facilitarán la comprensión por parte de la ciudadanía de la información recogida en cada conjunto de datos, por lo que deben ser amigables, usables, fáciles de navegar, accesibles, atractivas
+                                        visualmente y deben mostrar la información de una forma clara.</p>
+                                    <p class="cabiertas__text">Cada aplicación cuenta con diversos componentes que permiten la explotación de la información por vías diferentes y con el nivel de detalle que demande el ciudadano. Así por ejemplo, se dispone de formularios de búsqueda,
+                                        fichas con la información detallada de un objeto, gráficas de barra, treemaps, mapas geográficos, etc. En las gráficas se incluye la posibilidad de profundizar en los datos mostrados para llegar hasta el último
+                                        nivel de agregación. Otra funcionalidad interesante es que los resultados de las consultas que se realicen se pueden exportar a formatos reutilizables.</p>
+                                    <p class="cabiertas__text">Siguiendo la filosofía del proyecto Ciudades Abiertas, los desarrollos resultantes deben facilitar la implantación de las visualizaciones en cualquier organismo que las desee utilizar. Para conseguirlo las aplicaciones
+                                        se han desarrollado utilizando tecnología estándar de cliente. Es decir, están basadas en HTML5, CSS y Javascript. Se ha evitado la implementación de lógica en el lado del servidor para eliminar las dependencias
+                                        con una determinada tecnología de servidor.</p>
+                                    <p class="cabiertas__text">Otra medida para eliminar dependencias se fundamenta en que los datos que se muestran en las gráficas se consultan mediante la especificación de API de datos abiertos definida en otra actuación del proyecto, que a su
+                                        vez está basada en vocabularios consensuados y que permite la descarga de los datos en formatos reutilizables (en concreto, para las visualizaciones se consumen los datos en formato JSON). De esta forma, cualquier
+                                        organismo que desee reutilizar estas visualizaciones sólo se deberá preocupar en implementar la especificación de la API de Ciudades Abiertas y configurar las visualizaciones para que utilicen esta API.</p>
+                                    <p class="cabiertas__text">Las visualizaciones se irán publicando en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. A continuación se detallan las aplicaciones de visualización contempladas
+                                        en el proyecto.</p>
+                                    <h2 class="cabiertas__subtitle">Organización-Organigrama</h2>
+                                    <p class="cabiertas__text">Su finalidad es disponer de una visualización que permita a los ciudadanos consultar de forma gráfica e interactiva la información correspondiente a la estructura de un organismo.</p>
+                                    <p class="cabiertas__text">En la actualidad, esta visualización se encuentra en fase de revisión y está a la espera de su finalización y publicación.</p>
+                                    <h2 class="cabiertas__subtitle">Contratos Abiertos</h2>
+                                    <p class="cabiertas__text">Esta visualización contempla la divulgación de datos y documentos de todas las etapas del proceso de contratación con el objetivo de incrementar la transparencia de ésta y permitir un análisis más profundo de los datos
+                                        de contratación por parte de los ciudadanos.</p>
+                                    <p class="cabiertas__text">Por el momento el desarrollo de esta visualización está pendiente de iniciarse.</p>
+                                    <h2 class="cabiertas__subtitle">Población</h2>
+                                    <p class="cabiertas__text">En el caso de esta visualización es fundamental la representación en mapas de los datos agregados de población con mecanismos de filtrado que permitan seleccionar la información que se desee visualizar.</p>
+                                    <p class="cabiertas__text">Por el momento el desarrollo de esta visualización está pendiente de iniciarse.</p>
+                                    <h2 class="cabiertas__subtitle">Subvenciones</h2>
+                                    <p class="cabiertas__text">Esta visualización permite a los ciudadanos consultar la información sobre las subvenciones concedidas por un municipio y el filtrado de esta información según diversos criterios.</p>
+                                    <p class="cabiertas__text">En la actualidad, esta visualización se encuentra en fase de revisión y está a la espera de su finalización y publicación.</p>
+                                </div>
+
+                            </div>
 
                         </div>
-
-
-                        <div id="tabPanel4" role="tabpanel" aria-labelledby="tab4-label" class="tabs__panel__item js-tabs-panel-item">
-
-                          <div class="lineasActuacion__section">
-                            <p class="cabiertas__text">Dentro de esta actuación se exploran diferentes vías para facilitar la visualización de los conjuntos de datos. La actuación, a su vez, se divide en 3 subactuaciones con objetivos diferenciados.</p>
-                          </div>
-
-                          <div class="lineasActuacion__section">
-                            <h2 class="cabiertas__title">Visualizaciones mediante sistemas externos</h2>
-                            <p class="cabiertas__text" style="margin-bottom: 15px;">El objetivo de esta actuación es analizar las plataformas existentes y diseñar cómo se debería realizar la integración de las mismas con un portal de datos abiertos para permitir la visualización de sus conjuntos de datos utilizando estas herramientas externas. De entre las herramientas analizadas, se han seleccionado aquéllas que permiten el funcionamiento descrito. En concreto, las herramientas de visualización debían cumplir con dos requisitos:</p>
-                            <ol class="lista__custom__second">
-                              <li class="list__element__numbered">
-                                <div class="lineasActuacion__section">La integración debía funcionar con simples enlaces a sitios web sin necesidad de descargar ningún software.</div>
-                              </li>
-                              <li class="list__element__numbered">
-                                <div class="lineasActuacion__section">En la invocación sólo debía ser necesario pasar como parámetro la URL de descarga del fichero de los datos.</div>
-                              </li>
-                            </ol>
-                            <p class="cabiertas__text" style="margin-bottom: 15px;">Las herramientas que fueron seleccionadas tras este estudio son las siguientes:</p>
-                            <ul class="cabiertas__list">
-                              <li><a href="https://plot.ly/" target="_blank">Plotly</a>: facilita la creación de una gran variedad de visualizaciones interactivas de datos para la web. Acepta ficheros en los siguientes formatos: CSV, TSV, XLS, XLSX.</li>
-                              <li><a href="https://carto.com/" target="_blank">Carto</a>: a partir de los datos, genera mapas interactivos basados en la ubicación. Acepta ficheros en los siguientes formatos: CSV, XLS, XLSX, KML (Google Earth), KMZ, GeoJSON, SHP.</li>
-                              <li><a href="http://geojson.io" target="_blank">Geojson.io</a>: permite visualizar y editar datos geográficos en formato GeoJSON, así como exportar a un gran número de formatos.</li>
-                            </ul>
-                            <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Integracion_Sistemas_Visualizacion-121-17-SP.pdf" target="_blank">Informe con el Análisis de Sistemas Externos de Visualización</a> <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
-                            <p class="cabiertas__text">Adicionalmente se ha desarrollado una extensión para CKAN del tipo de “Open with Apps” (similar a la que se puede encontrar en <a href="https://www.data.gov/" target="_blank">data.gov</a>) que permite la integración sencilla con este tipo de herramientas. Funcionalmente, la extensión muestra de forma automática un enlace para la visualización de los recursos de CKAN en las herramientas externas de visualización seleccionadas (Plotly, Carto y Geojson.io) dependiendo del formato de los recursos. Si el recurso no es compatible con ninguno de los tipos de fichero contemplados entonces el enlace no se muestra.</p>
-                            <p class="cabiertas__text">La extensión, denominada <strong>“Abrir Con”</strong>, está publicada en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. Para cualquier consulta acerca del funcionamiento de la misma se puede poner en contacto con nosotros a través del <a href="https://ciudadesabiertas.es/contacto/index.html">punto de contacto</a>.</p>
-                          </div>
-
-                          <div class="lineasActuacion__section">
-                            <h2 class="cabiertas__title">Extensiones de visualización en CKAN</h2>
-                            <p class="cabiertas__text">Dentro del ecosistema de la herramienta de gestión de datos abiertos CKAN se han desarrollado multitud de extensiones, algunas de ellas relacionadas con la visualización de los datos. Dentro de esta actuación se han analizado tanto desde el punto de vista técnico como funcional diversas extensiones de visualización disponibles para poder determinar cuáles son las más adecuadas para su utilización en un portal de datos abiertos basado en CKAN.</p>
-                            <p class="cabiertas__text">En el análisis se han cubierto los siguientes tipos de visualización: tablas, mapas (visualización de información georreferenciada), gráficas y dashboard (tablero de visualizaciones).</p>
-                            <p class="cabiertas__text">Para determinar las extensiones a analizar se han explorado tanto los directorios oficiales de extensiones de CKAN como diversos portales de datos abiertos basados en CKAN, así como otras fuentes de información.</p>
-                            <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Extensiones_CKAN-121-17-SP.pdf" target="_blank">Informe con el Análisis de las Extensiones de Visualización para CKAN</a> <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
-                          </div>
-
-                          <div class="lineasActuacion__section">
-                            <h2 class="cabiertas__title">Visualizaciones específicas</h2>
-                            <p class="cabiertas__text">La finalidad de esta actuación es el desarrollo de aplicaciones de visualización específicas sobre 4 conjuntos de datos basados en vocabularios: Organización-Organigrama, Contratos Abiertos, Población y Subvenciones. Estas visualizaciones facilitarán la comprensión por parte de la ciudadanía de la información recogida en cada conjunto de datos, por lo que deben ser amigables, usables, fáciles de navegar, accesibles, atractivas visualmente y deben mostrar la información de una forma clara.</p>
-                            <p class="cabiertas__text">Cada aplicación cuenta con diversos componentes que permiten la explotación de la información por vías diferentes y con el nivel de detalle que demande el ciudadano. Así por ejemplo, se dispone de formularios de búsqueda, fichas con la información detallada de un objeto, gráficas de barra, treemaps, mapas geográficos, etc. En las gráficas se incluye la posibilidad de profundizar en los datos mostrados para llegar hasta el último nivel de agregación. Otra funcionalidad interesante es que los resultados de las consultas que se realicen se pueden exportar a formatos reutilizables.</p>
-                            <p class="cabiertas__text">Siguiendo la filosofía del proyecto Ciudades Abiertas, los desarrollos resultantes deben facilitar la implantación de las visualizaciones en cualquier organismo que las desee utilizar. Para conseguirlo las aplicaciones se han desarrollado utilizando tecnología estándar de cliente. Es decir, están basadas en HTML5, CSS y Javascript. Se ha evitado la implementación de lógica en el lado del servidor para eliminar las dependencias con una determinada tecnología de servidor.</p>
-                            <p class="cabiertas__text">Otra medida para eliminar dependencias se fundamenta en que los datos que se muestran en las gráficas se consultan mediante la especificación de API de datos abiertos definida en otra actuación del proyecto, que a su vez está basada en vocabularios consensuados y que permite la descarga de los datos en formatos reutilizables (en concreto, para las visualizaciones se consumen los datos en formato JSON). De esta forma, cualquier organismo que desee reutilizar estas visualizaciones sólo se deberá preocupar en implementar la especificación de la API de Ciudades Abiertas y configurar las visualizaciones para que utilicen esta API.</p>
-                            <p class="cabiertas__text">Las visualizaciones se irán publicando en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. A continuación se detallan las aplicaciones de visualización contempladas en el proyecto.</p>
-                            <h2 class="cabiertas__subtitle">Organización-Organigrama</h2>
-                            <p class="cabiertas__text">Su finalidad es disponer de una visualización que permita a los ciudadanos consultar de forma gráfica e interactiva la información correspondiente a la estructura de un organismo.</p>
-                            <p class="cabiertas__text">En la actualidad, esta visualización se encuentra en fase de revisión y está a la espera de su finalización y publicación.</p>
-                            <h2 class="cabiertas__subtitle">Contratos Abiertos</h2>
-                            <p class="cabiertas__text">Esta visualización contempla la divulgación de datos y documentos de todas las etapas del proceso de contratación con el objetivo de incrementar la transparencia de ésta y permitir un análisis más profundo de los datos de contratación por parte de los ciudadanos.</p>
-                            <p class="cabiertas__text">Por el momento el desarrollo de esta visualización está pendiente de iniciarse.</p>
-                            <h2 class="cabiertas__subtitle">Población</h2>
-                            <p class="cabiertas__text">En el caso de esta visualización es fundamental la representación en mapas de los datos agregados de población con mecanismos de filtrado que permitan seleccionar la información que se desee visualizar.</p>
-                            <p class="cabiertas__text">Por el momento el desarrollo de esta visualización está pendiente de iniciarse.</p>
-                            <h2 class="cabiertas__subtitle">Subvenciones</h2>
-                            <p class="cabiertas__text">Esta visualización permite a los ciudadanos consultar la información sobre las subvenciones concedidas por un municipio y el filtrado de esta información según diversos criterios.</p>
-                            <p class="cabiertas__text">En la actualidad, esta visualización se encuentra en fase de revisión y está a la espera de su finalización y publicación.</p>
-                          </div>
-
-                        </div>
-
                     </div>
-                </div>
 
                 </div>
 
-                </div>
-               </div>
-          </div>
-     </div>
-</div>
-
-
-
-      <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imágen decorativa en el lateral izquierdo de la pantalla">
-      <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imágen decorativa en el lateral derecho de la pantalla">
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
-<footer class="footer">
-     <div class="footer__content">
-
-          <div class="footer__logos-container">
-
-<div class="footer__logos-box">
-     <ul class="footer__logos-top">
-          <li class="footer__logos footer__logoGobEspaña">
-               <a href="http://www.mineco.gob.es/portal/site/mineco/" target="_blank">
-                    <img title="Logo Gobierno de España. Abre una ventana nueva" src="../assets/img/cabiertas/gobEspana-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoRed">
-               <a href="https://www.red.es/redes/" target="_blank">
-                    <img title="Logo Red.es. Abre una ventana nueva" src="../assets/img/cabiertas/red-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoCiudadesInteligentes">
-               <a href="http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes" target="_blank">
-                    <img title="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva" src="../assets/img/cabiertas/ciudadesInteligentes-logo.svg" alt="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoUnionEuropea">
-               <a href="http://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
-                    <img title="Logo de la Unión Europea. Abre una ventana nueva" src="../assets/img/cabiertas/unionEuropea-logo.svg" alt="Logo de la Unión Europea. Abre una ventana nueva">
-               </a>
-          </li>
-     </ul>
-     <ul class="footer__logos-bottom">
-          <li class="footer__logos footer__logoAcoruña">
-               <a href="https://www.coruna.gal" target="_blank">
-                    <img title="Logo del Ayuntamiento de A Coruña. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntAcoruna-logo.svg" alt="Logo del Ayuntamiento de A coruña. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoMadrid">
-               <a href="https://www.madrid.es/" target="_blank">
-                    <img title="Logo del Ayuntamiento de Madrid. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntMadrid-logo.svg" alt="Logo del Ayuntamiento de Madrid. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoSantiago">
-               <a href="http://santiagodecompostela.gal/" target="_blank">
-                    <img title="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntSantiagoCompostela-logo.svg" alt="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva">
-               </a>
-          </li>
-          <li class="footer__logos footer__logoZaragoza">
-               <a href="https://www.zaragoza.es/sedeelectronica/" target="_blank">
-                    <img title="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntZaragoza-logo.svg" alt="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva">
-               </a>
-          </li>
-     </ul>
-</div>
 
 
-          </div>
+    <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imágen decorativa en el lateral izquierdo de la pantalla">
+    <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imágen decorativa en el lateral derecho de la pantalla">
+    </div>
 
-          <div class="footer__bottom">
-               <div class="footer__logo-box">
-                    <img class="footer__logoCiudadesAbiertas" title="Logo de Ciudades abiertas. Ir a inicio" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
-               </div>
-               <div class="footer__navbar">
-                    <ul>
-                         <li class="footer__navbar__items"><a href="../avisoLegal/index.html">Aviso legal</a></li>
-                         <li class="footer__navbar__items"><a href="../accesibilidad/index.html">Accesibilidad</a></li>
+    <footer class="footer">
+        <div class="footer__content">
+
+            <div class="footer__logos-container">
+
+                <div class="footer__logos-box">
+                    <ul class="footer__logos-top">
+                        <li class="footer__logos footer__logoGobEspaña">
+                            <a href="http://www.mineco.gob.es/portal/site/mineco/" target="_blank">
+                                <img title="Logo Gobierno de España. Abre una ventana nueva" src="../assets/img/cabiertas/gobEspana-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoRed">
+                            <a href="https://www.red.es/redes/" target="_blank">
+                                <img title="Logo Red.es. Abre una ventana nueva" src="../assets/img/cabiertas/red-logo.svg" alt="Logo gobierno de España y Red.es. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoCiudadesInteligentes">
+                            <a href="http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes" target="_blank">
+                                <img title="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva" src="../assets/img/cabiertas/ciudadesInteligentes-logo.svg" alt="Logo del portal Ciudades e Islas Inteligentes. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoUnionEuropea">
+                            <a href="http://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                                <img title="Logo de la Unión Europea. Abre una ventana nueva" src="../assets/img/cabiertas/unionEuropea-logo.svg" alt="Logo de la Unión Europea. Abre una ventana nueva">
+                            </a>
+                        </li>
                     </ul>
-               </div>
-          </div>
-     </div>
-</footer>
+                    <ul class="footer__logos-bottom">
+                        <li class="footer__logos footer__logoAcoruña">
+                            <a href="https://www.coruna.gal" target="_blank">
+                                <img title="Logo del Ayuntamiento de A Coruña. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntAcoruna-logo.svg" alt="Logo del Ayuntamiento de A coruña. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoMadrid">
+                            <a href="https://www.madrid.es/" target="_blank">
+                                <img title="Logo del Ayuntamiento de Madrid. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntMadrid-logo.svg" alt="Logo del Ayuntamiento de Madrid. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoSantiago">
+                            <a href="http://santiagodecompostela.gal/" target="_blank">
+                                <img title="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntSantiagoCompostela-logo.svg" alt="Logo del Ayuntamiento de Santiago de Compostela. Abre una ventana nueva">
+                            </a>
+                        </li>
+                        <li class="footer__logos footer__logoZaragoza">
+                            <a href="https://www.zaragoza.es/sedeelectronica/" target="_blank">
+                                <img title="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva" src="../assets/img/cabiertas/ayuntZaragoza-logo.svg" alt="Logo del Ayuntamiento de Zaragoza. Abre una ventana nueva">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-  </body>
+
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__logo-box">
+                    <img class="footer__logoCiudadesAbiertas" title="Logo de Ciudades abiertas. Ir a inicio" src="../assets/img/cabiertas/logo.svg" alt="Logo de Ciudades abiertas. Ir a inicio">
+                </div>
+                <div class="footer__navbar">
+                    <ul>
+                        <li class="footer__navbar__items"><a href="../avisoLegal/index.html">Aviso legal</a></li>
+                        <li class="footer__navbar__items"><a href="../accesibilidad/index.html">Accesibilidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
