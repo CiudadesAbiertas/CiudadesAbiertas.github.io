@@ -115,6 +115,11 @@ img {
 svg:not(:root) {
     overflow: hidden
 }
+img.img-red-es {
+    max-height: 61px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 figure {
     margin: 1em 40px
@@ -1514,13 +1519,6 @@ video {
     }
 }
 
-
-/* @media (max-width: 1400px) {
-    .lateral-shapes {
-        display: none;
-    }
-} */
-
 @media (min-width: 576px) and (max-width: 768px) {
     .presentacion .presentacion-lineasActuacion__content {
         max-width: 500px
@@ -1857,7 +1855,7 @@ video {
 
 .footer__logos {
     display: inline-block;
-    margin-left: 44px
+    margin-left: 44px;
 }
 
 .footer__logos:first-child {
@@ -1869,14 +1867,18 @@ video {
 }
 
 .footer__logoGobEspaña {
-    width: 280px
+    width: 336px;
 }
 
 .footer__logoRed {
-    width: 70px;
-    margin-left: 10px;
-    line-height: 50px;
-    vertical-align: text-bottom
+    width: auto !important;
+    vertical-align: text-bottom !important;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+.footer__logoRed img {
+    max-height: 42px !important;
 }
 
 .footer__logoAcoruña {
@@ -1945,20 +1947,22 @@ video {
     content: none
 }
 
-@media (max-width: 1177px) {
+@media (max-width: 1203px) {
     .footer__logos {
         margin-left: 35px
     }
     .footer__logoGobEspaña {
-        width: 215px
+        width: 274px;
     }
     .footer__logoRed {
-        width: 57px;
-        margin-left: 10px;
-        line-height: 40px;
-        vertical-align: text-bottom
+        vertical-align: text-bottom;
+        margin-bottom: 7px;
+        margin-top: 6px;
     }
-    .footer__logoAcoruña {
+    .footer__logoRed img {
+        max-height: 37px !important;
+    }
+        .footer__logoAcoruña {
         width: 215px
     }
     .footer__logoMadrid {
@@ -1979,18 +1983,20 @@ video {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1011px) {
     .footer__logos {
         margin-left: 24px
     }
     .footer__logoGobEspaña {
-        width: 150px
+        width: 187px;
     }
     .footer__logoRed {
-        width: 45px;
-        margin-left: 5px;
-        line-height: 30px;
-        vertical-align: text-bottom
+        vertical-align: text-bottom;
+        margin-bottom: 7px;
+        margin-top: 4px;
+    }
+     .footer__logoRed img {
+        max-height: 23px !important;
     }
     .footer__logoAcoruña {
         width: 151px
@@ -2088,14 +2094,16 @@ video {
         position: relative
     }
     .footer__logoGobEspaña {
-        width: 215px
+        width: 284px;
     }
     .footer__logoRed {
-        width: 57px;
-        position: absolute;
-        top: 10px;
-        left: 230px
+       position: relative;
+       text-align: left;
     }
+    .footer__logoRed img {
+        max-height: 37px !important;
+    }
+
     .footer__logoAcoruña {
         width: 215px
     }
@@ -2538,5 +2546,166 @@ ol.lista__custom__second li.list__element__numbered {
     .presentacion .presentacion-documentation__right-info img {
         float: none;
         max-width: 220px;
+    }
+}
+
+/* Cookies style */
+
+#cookiesInfo {
+	height: auto !important;
+	bottom: 0 !important;
+	top: auto !important;
+	position: fixed !important;
+	display: block; /* Hidden by default */
+
+	/* Stay in place */
+	z-index: 1000; /* Sit on top */
+	left: 0;
+	width: 100%; /* Full width */
+
+	/* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #293648 !important; /* Fallback color */
+	line-height: 1.8rem;
+	color: white;
+}
+
+#cookiesInfo > .container-cookies-acceptButton {
+    border: none!important;
+    padding: 10px 20px 10px 30px;
+    margin-top: 23px;
+    margin-bottom: 8px;
+}
+
+.container-cookies-change-config {
+    border: none!important;
+    padding: 22px 20px 31px 30px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#button-change-config-cookies{
+	background-color: #007eae;
+	border: 1px solid #007eae;
+	color: #fff;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	width: 100% !important;
+	text-align: center;
+	min-height: 40px;
+	cursor: pointer;
+	line-height: 1.4rem;
+	transition: all 0.3s ease-in 0s;
+	white-space: nowrap;
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#cookiesInfo > .container-info-label-cookies-info {
+    border: none!important;
+    padding: 10px 20px 10px 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#button-accept-cookies{
+	background-color: #007eae;
+	border: 1px solid #007eae;
+	color: #fff;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	width: 100% !important;
+	text-align: center;
+	min-height: 40px;
+	cursor: pointer;
+	line-height: 1.4rem;
+	transition: all 0.3s ease-in 0s;
+	white-space: nowrap;
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.container-info-label-cookies-info {
+    width: 75% !important;
+    float: left;
+}
+.container-cookies-acceptButton{
+    width: 25% !important;
+    float: left;
+}
+a#button-more-info, #button-more-info-only {
+    color: #fcc442;
+}
+
+.custom-form-checkbox {
+    vertical-align: middle;
+    background: url(/assets/img/aviso_legal/check.svg) no-repeat scroll transparent;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+
+}
+
+.custom-form-checkbox.custom-form-checked {
+    background: url(/assets/img/aviso_legal/checkSelected.png) no-repeat scroll transparent;
+    border: 1px solid #ccc;
+}
+
+.container-cookies-group{
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #baaeae;
+    margin-top: -20px;
+}
+
+@media (max-width:1751px) and (min-width:1131px) {
+    #cookiesInfo > .container-cookies-acceptButton {
+        margin-top: 20px;
+        padding-top: 20px 15px 10px 15px;
+    }
+}
+@media (max-width: 1751px) and (min-width: 1131px) {
+    #cookiesInfo > .container-cookies-acceptButton {
+        margin-top: 20px;
+        padding-top: 20px 15px 10px 15px;
+    }
+    .container-cookies-acceptButton{
+            padding-left: 0px;
+    }
+}
+
+@media (max-width: 1130px) and (min-width: 768px) {
+    .container-info-label-cookies-info{
+        width: 65% !important;
+    }
+    .container-cookies-acceptButton{
+        width: 35% !important;
+    }
+    #cookiesInfo > .container-cookies-acceptButton {
+        margin-top: 52px;
+    }
+}
+@media (max-width: 793px) and (min-width: 768px) {
+    #cookiesInfo > .container-cookies-acceptButton {
+        margin-top: 45px;
+    }
+}
+@media (max-width: 767px) {
+    .container-info-label-cookies-info, .container-cookies-acceptButton{
+        width: 100% !important;
+        padding: 3px 45px 3px 8px !important;
+    }
+    #cookiesInfo > .container-cookies-acceptButton {
+        margin-top: 0px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
