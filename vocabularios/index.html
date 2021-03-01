@@ -13,6 +13,7 @@
 
     <!-- GENERAL.JS-->
     <script defer src="../assets/js/general.js"></script>
+	<script defer src="../assets/js/cookies-banner.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -125,22 +126,22 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active vocabulario-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item vocabulario-color ">
-                                <a href="#" title="CatálogoVocabularios" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" aria-controls="tabPanel2">
+                                <a href="#" title="CatálogoVocabularios" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel2">
                                     <h3 class="tabs__list__title">Catálogo de Vocabularios</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item vocabulario-color ">
-                                <a href="#" title="SKOS" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" aria-controls="tabPanel3">
+                                <a href="#" title="SKOS" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel3">
                                     <h3 class="tabs__list__title">Catálogo de listas SKOS</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item vocabulario-color ">
-                                <a href="#" title="VocabulariosReutilizados" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                <a href="#" title="VocabulariosReutilizados" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel4">
                                     <h3 class="tabs__list__title">Vocabularios Reutilizados</h3>
                                 </a>
                             </li>
@@ -212,7 +213,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" target="_blank">Censo de locales y terrazas, así como sus actividades económicas y licencias de apertura asociadas</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Censo de locales y terrazas, actividades econoencias de apertura asociadas')">Censo de locales y terrazas, así como sus actividades económicas y licencias de apertura asociadas</a></td>
                                                 <td>16/11/18</td>
                                                 <td><label>escom</label></td>
                                                 <td nowrap>
@@ -245,7 +246,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" target="_blank">Agenda Municipal</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Agenda Municipal')">Agenda Municipal</a></td>
                                                 <td>21/10/19</td>
                                                 <td><label>esagm</label></td>
                                                 <td nowrap>
@@ -279,7 +280,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/demografia/padron-municipal" target="_blank">Padrón de Habitantes</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/demografia/padron-municipal" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Padron de Habitantes')">Padrón de Habitantes</a></td>
                                                 <td>04/02/20</td>
                                                 <td><label>espad</label></td>
                                                 <td nowrap>
@@ -313,7 +314,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/demografia/cubo-padron-municipal" target="_blank" >Cubos de Datos del Padrón de Habitantes</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/demografia/cubo-padron-municipal" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Cubos de Datos del Padron de Habitantes')">Cubos de Datos del Padrón de Habitantes</a></td>
                                                 <td>04/02/20</td>
                                                 <td><label>espad-cubo</label></td>
                                                 <td nowrap>
@@ -346,7 +347,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica" target="_blank" >Bicicleta pública</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Bicicleta publica')">Bicicleta pública</a></td>
                                                 <td>30/04/20</td>
                                                 <td><label>esbici</label></td>
                                                 <td nowrap>
@@ -379,7 +380,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html" target="_blank" >Autobuses urbanos</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Autobuses urbanos')">Autobuses urbanos</a></td>
                                                 <td>30/11/20</td>
                                                 <td><label>esautob</label></td>
                                                 <td nowrap>
@@ -412,7 +413,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/transporte/trafico/" target="_blank">Tráfico</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/transporte/trafico/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Trafico')">Tráfico</a></td>
                                                 <td>13/10/20</td>
                                                 <td><label>estraf</label></td>
                                                 <td nowrap>
@@ -472,7 +473,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/index-es.html" target="_blank">Presupuesto y Ejecución Presupuestaria</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/index-es.html" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Presupuesto y Ejecucion Presupuestaria')">Presupuesto y Ejecución Presupuestaria</a></td>
                                                 <td>14/12/20</td>
                                                 <td><label>espresup</label></td>
                                                 <td nowrap>
@@ -505,7 +506,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/sector-publico/convenios/" target="_blank">Convenios</a></td>
+                                                <td><a class="link" href="http://vocab.ciudadesabiertas.es/def/sector-publico/convenios/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Convenios')">Convenios</a></td>
                                                 <td>02/10/20</td>
                                                 <td><label>esconv</label></td>
                                                 <td nowrap>
@@ -644,7 +645,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento" target="_blank">Periodo de funcionamiento</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Periodo de funcionamiento')">Periodo de funcionamiento</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -667,7 +668,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion" target="_blank">Tipo de situación</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de situación')">Tipo de situación</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -690,7 +691,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso" target="_blank">Tipo de acceso</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso" target="_blank"onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de acceso')">Tipo de acceso</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -713,7 +714,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia" target="_blank">Tipo de estado de trámite de la licencia</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de estado de tramite de la licencia')">Tipo de estado de trámite de la licencia</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -736,7 +737,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion" target="_blank">Tipo de agrupación</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion" target="_blank"  onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de agrupación')">Tipo de agrupación</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -759,7 +760,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso" target="_blank">Tipo de acceso</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de acceso')">Tipo de acceso</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -782,7 +783,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-cargo" target="_blank">Tipo de cargo</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-cargo" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de cargo')">Tipo de cargo</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -805,7 +806,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion" target="_blank">Tipo de sesión</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de sesion')">Tipo de sesión</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -828,7 +829,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante" target="_blank">Rol de integrante de reunión</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Rol de integrante de reunion')">Rol de integrante de reunión</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -851,7 +852,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal" target="_blank">Canal del evento</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Canal del evento')">Canal del evento</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -874,7 +875,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento" target="_blank">Tipo de evento</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de evento')">Tipo de evento</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -897,7 +898,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-documento-identidad" target="_blank">Tipo de documento de identidad</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-documento-identidad" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de documento de identidad')">Tipo de documento de identidad</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -920,7 +921,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-local-residencia" target="_blank">Tipo de local de residencia</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-local-residencia" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de local de residencia')">Tipo de local de residencia</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -943,7 +944,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-nivel-estudio" target="_blank">Tipo de nivel de estudio</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-nivel-estudio" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de nivel de estudio')">Tipo de nivel de estudio</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -966,7 +967,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-variacion" target="_blank">Tipo de variación</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/tipo-variacion" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de variacion')">Tipo de variación</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -989,7 +990,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/edad" target="_blank">Lista de códigos de edad</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/demografia/padron-municipal/edad" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Lista de codigos de edad')">Lista de códigos de edad</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1012,7 +1013,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-modelo-bicicleta" target="_blank">Tipo de modelo de bicicleta</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-modelo-bicicleta" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de modelo de bicicleta')">Tipo de modelo de bicicleta</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1035,7 +1036,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-anclaje" target="_blank">Tipo de estado de anclaje</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-anclaje" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de estado de anclaje')">Tipo de estado de anclaje</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1058,7 +1059,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-estacion" target="_blank">Tipo de estado de la estación</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-estacion" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de estado de la estacion')">Tipo de estado de la estación</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1081,7 +1082,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-bicicleta" target="_blank">Tipo de estado de bicicleta</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-bicicleta" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de estado de bicicleta')">Tipo de estado de bicicleta</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1104,7 +1105,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento" target="_blank">Tipo de modelo de bicicleta</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de modelo de bicicleta')">Tipo de modelo de bicicleta</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1127,7 +1128,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-entidad" target="_blank">Tipo de entidad</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-entidad" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de entidad')">Tipo de entidad</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1150,7 +1151,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/modalidad-convenio" target="_blank">Modalidad de un convenio</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/modalidad-convenio" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Modalidad de un convenio')">Modalidad de un convenio</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1173,7 +1174,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-convenio" target="_blank">Tipo de convenio</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-convenio" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de convenio')">Tipo de convenio</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1196,7 +1197,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-variacion" target="_blank">Tipo de variación</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/convenio/tipo-variacion" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de variación')">Tipo de variación</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1219,7 +1220,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico" target="_blank">Tipo de equipo de  tráfico</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de equipo de trafico')">Tipo de equipo de tráfico</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1242,7 +1243,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/trafico/tipo-incidencia" target="_blank">Tipo de incidencia</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/trafico/tipo-incidencia" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de incidencia')">Tipo de incidencia</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1265,7 +1266,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio" target="_blank">Tipo de nivel de servicio</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/page/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Tipo de nivel de servicio')">Tipo de nivel de servicio</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1288,7 +1289,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto" target="_blank">Clasificación por Programa de gasto</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Clasificacion por Programa de gasto')">Clasificación por Programa de gasto</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1311,7 +1312,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto" target="_blank">Clasificación Económica de gasto</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Clasificacion Economica de gasto')">Clasificación Económica de gasto</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1334,7 +1335,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso" target="_blank">Clasificación Económica de ingreso</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Clasificacion Economica de ingreso')">Clasificación Económica de ingreso</a></td>
                                                 <td nowrap>
                                                     <p class="link">
                                                         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <label class="highlight link">CC-BY</label></a>
@@ -1383,7 +1384,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio" target="_blank">Territorio</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Territorio')">Territorio</a></td>
                                                 <td><label>esadm</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1411,7 +1412,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" target="_blank">Callejero</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Callejero')">Callejero</a></td>
                                                 <td><label>escjr</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1437,7 +1438,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal" target="_blank">Dirección Postal</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Direccion Postal')">Dirección Postal</a></td>
                                                 <td><label>esdir</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1463,7 +1464,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal" target="_blank">Equipamiento Municipal</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal" target="_blank"  onclick="captureInPageLink('Enlace Externo', 'Click', 'Equipamiento Municipal')">Equipamiento Municipal</a></td>
                                                 <td><label>esequip</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1489,7 +1490,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion/index-en.html" target="_blank">Subvenciones</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion/index-en.html" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Subvenciones')">Subvenciones</a></td>
                                                 <td><label>essub</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1515,7 +1516,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="https://datos.ign.es/def/geo_core" target="_blank">Objetos Geográficos</a></td>
+                                                <td><a class="link" href="https://datos.ign.es/def/geo_core" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Objetos Geograficos')">Objetos Geográficos</a></td>
                                                 <td><label>geo_core</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1541,7 +1542,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion/index-en.html" target="_blank">Organizaciones públicas (y sus organigramas) en España</a></td>
+                                                <td><a class="link" href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion/index-en.html" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Organizaciones publicas y sus organigramas en España')">Organizaciones públicas (y sus organigramas) en España</a></td>
                                                 <td><label>orges</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1567,7 +1568,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="https://www.ogc.org/standards/geosparql" target="_blank">GeoSPARQL Ontology</a></td>
+                                                <td><a class="link" href="https://www.ogc.org/standards/geosparql" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'GeoSPARQL Ontology')">GeoSPARQL Ontology</a></td>
                                                 <td><label>geosparql</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1593,7 +1594,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="https://www.w3.org/TR/vocab-ssn" target="_blank">Semantic Sensor Network Ontology</a></td>
+                                                <td><a class="link" href="https://www.w3.org/TR/vocab-ssn" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Semantic Sensor Network Ontology')">Semantic Sensor Network Ontology</a></td>
                                                 <td><label>sosa</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1619,7 +1620,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://www.w3.org/2003/01/geo/wgs84_pos#" target="_blank">Geoposicionamiento WGS84</a></td>
+                                                <td><a class="link" href="http://www.w3.org/2003/01/geo/wgs84_pos#" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Geoposicionamiento WGS84')">Geoposicionamiento WGS84</a></td>
                                                 <td><label>geo</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">html</label></a></p>
@@ -1643,7 +1644,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a class="link" href="http://data.europa.eu/eli" target="_blank">ELI European Legislation Identifier</a></td>
+                                                <td><a class="link" href="http://data.europa.eu/eli" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'ELI European Legislation Identifier')">ELI European Legislation Identifier</a></td>
                                                 <td><label>eli</label></td>
                                                 <td nowrap>
                                                     <p class="link"><a href="#" target="_blank"><label class="highlight">rdf+xml</label></a></p>
@@ -1706,6 +1707,19 @@
     <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imagen decorativa en el lateral izquierdo de la pantalla">
     <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imagen decorativa en el lateral derecho de la pantalla">
     </div>
+	
+	<!-- 
+	<div id="cookiesInfo">
+		<div class="container-info-label-cookies-info">
+			Utilizamos cookies propias y de terceros para analizar tu navegación de forma totalmente anonimizada con fines estadísticos. Para consultar más información visita nuestra página de
+			<a id="button-more-info-only" href="/avisoLegal/index.html" target="_blank">Política de cookies</a> o
+			<a id="button-more-info" href="/avisoLegal/index.html#ConfiguracionCookies" target="_blank">cambia la configuración de cookies</a>
+		</div>
+		<div class="container-cookies-acceptButton">
+			<a id="button-accept-cookies" href="#" onclick="acceptCookies();">Aceptar y seguir navegando</a>
+		</div>
+	</div>
+	-->
 
     <footer class="footer">
         <div class="footer__content">

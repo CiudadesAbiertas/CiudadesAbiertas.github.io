@@ -12,6 +12,7 @@
     <script defer src="../assets/js/main.min.js"></script>
     <!-- GENERAL.JS-->
     <script defer src="../assets/js/general.js"></script>
+	<script defer src="../assets/js/cookies-banner.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -125,12 +126,12 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active participacion-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item participacion-color ">
-                                <a href="#" title="ProcesosParticipativos" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab"  aria-controls="tabPanel2">
+                                <a href="#" title="ProcesosParticipativos" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel2">
                                     <h3 class="tabs__list__title">Procesos Participativos</h3>
                                 </a>
                             </li>
@@ -142,7 +143,7 @@
                          </li>
 -->
                             <li class="tabs__list__item js-tablist-item participacion-color ">
-                                <a href="#" title="Plataformas" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" aria-controls="tabPanel5">
+                                <a href="#" title="Plataformas" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel5">
                                     <h3 class="tabs__list__title">Plataformas de Participación Ciudadana</h3>
                                 </a>
                             </li>
@@ -334,7 +335,7 @@
                                         </thead>
                                         <tbody class="content__procesoparticipativo_table">
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Iniciativa-121-17-SP.pdf" target="_blank">Iniciativa Popular</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Iniciativa-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Iniciativa Popular')">Iniciativa Popular</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -343,7 +344,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta-121-17-SP.pdf" target="_blank">Consulta Popular</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Consulta Popular')">Consulta Popular</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -352,7 +353,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta_Reglamentos-121-17-SP.pdf" target="_blank">Consulta Pública Previa en la Elaboración de Ordenanzas y Reglamentos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta_Reglamentos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Consulta Publica Previa en la Elaboracion de Ordenanzas y Reglamentos')">Consulta Pública Previa en la Elaboración de Ordenanzas y Reglamentos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -363,7 +364,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Propuesta-121-17-SP.pdf" target="_blank">Propuesta Ciudadana</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Propuesta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Propuesta Ciudadana')">Propuesta Ciudadana</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -374,7 +375,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Audiencia-121-17-SP.pdf" target="_blank">Audiencia Pública</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Audiencia-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Audiencia Publica')">Audiencia Pública</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -384,7 +385,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Presupuestos-121-17-SP.pdf" target="_blank">Presupuestos Participativos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Presupuestos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Presupuestos Participativos')">Presupuestos Participativos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -394,7 +395,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Legislacion-121-17-SP.pdf" target="_blank">Legislación Colaborativa</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Legislacion-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Legislacion Colaborativa')">Legislación Colaborativa</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -403,7 +404,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Diseno_Urbano-121-17-SP.pdf" target="_blank">Diseño Urbano Colaborativo</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Diseno_Urbano-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Disenyo Urbano Colaborativo')">Diseño Urbano Colaborativo</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -412,7 +413,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Encuesta-121-17-SP.pdf" target="_blank">Encuesta Ciudadana</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Encuesta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Encuesta Ciudadana')">Encuesta Ciudadana</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -421,7 +422,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Quejas_Sugerencias-121-17-SP.pdf" target="_blank">Quejas y Sugerencias</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Quejas y Sugerencias')">Quejas y Sugerencias</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -429,7 +430,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Auditoria-121-17-SP.pdf" target="_blank">Auditoría Ciudadana</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Auditoria-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Auditoria Ciudadana')">Auditoría Ciudadana</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -452,7 +453,7 @@
                                         </thead>
                                         <tbody class="content__procesoparticipativo_table">
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Propuestas-121-17-SP.pdf" target="_blank">Creación de Propuestas</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Propuestas-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Creacion de Propuestas')">Creación de Propuestas</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -460,7 +461,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Votaciones-121-17-SP.pdf" target="_blank">Votaciones</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Votaciones-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Votaciones')">Votaciones</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -470,7 +471,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Debate_Apoyos-121-17-SP.pdf" target="_blank">Debate y Apoyos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Debate_Apoyos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Debate y Apoyos')">Debate y Apoyos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -482,7 +483,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Formularios-121-17-SP.pdf" target="_blank">Gestión de Formularios</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Formularios-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Gestion de Formularios')">Gestión de Formularios</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -491,7 +492,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Mapas_Colaborativos-121-17-SP.pdf" target="_blank">Mapas Colaborativos</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Mapas_Colaborativos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Mapas Colaborativos')">Mapas Colaborativos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -500,7 +501,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" >Quejas y Sugerencias</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Quejas y Sugerencias')">Quejas y Sugerencias</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -510,7 +511,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Informes-121-17-SP.pdf" target="_blank">Gestión de Informes Técnicos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Informes-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Gestion de Informes Tecnicos')">Gestión de Informes Técnicos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -524,7 +525,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Participantes-121-17-SP.pdf" target="_blank">Registro de Personas Participantes</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Participantes-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Registro de Personas Participantes')">Registro de Personas Participantes</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -543,10 +544,10 @@
                                     <h2 class="cabiertas__title" style="margin-top: 50px;">Documentación</h2>
                                     <p class="cabiertas__text" style="margin-bottom: 15px;">Desde los siguientes enlaces se puede descargar la documentación conjunta de las fichas de procesos e instrumentos, así como los ejemplos de instanciación de procesos.</p>
                                     <ul class="cabiertas__list">
-                                        <li><a href="../assets/doc/CiudadesAbiertas-P1-Catalogo_No_Normativo_Procesos-121-17-SP.pdf" target="_blank" >Catálogo de Procesos Participativos</a> <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></li>
-                                        <li><a href="../assets/doc/CiudadesAbiertas-P1-Catalogo_No_Normativo_Instrumentos-121-17-SP.pdf" target="_blank">Catálogo de Instrumentos para la Participación</a> <img src="../assets/img/octicons/download-pdf.png"
+                                        <li><a href="../assets/doc/CiudadesAbiertas-P1-Catalogo_No_Normativo_Procesos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Catalogo de Procesos Participativos')">Catálogo de Procesos Participativos</a> <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></li>
+                                        <li><a href="../assets/doc/CiudadesAbiertas-P1-Catalogo_No_Normativo_Instrumentos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Catalogo de Instrumentos para la Participacion')">Catálogo de Instrumentos para la Participación</a> <img src="../assets/img/octicons/download-pdf.png"
                                                 class="icon-download"></li>
-                                        <li><a href="../assets/doc/CiudadesAbiertas-P1-Ejemplos_Instanciaciones_Procesos-121-17-SP.pdf" target="_blank">Ejemplos de Instanciaciones de algunos Procesos Participativos</a> <img src="../assets/img/octicons/download-pdf.png"
+                                        <li><a href="../assets/doc/CiudadesAbiertas-P1-Ejemplos_Instanciaciones_Procesos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Ejemplos de Instanciaciones de algunos Procesos Participativos')">Ejemplos de Instanciaciones de algunos Procesos Participativos</a> <img src="../assets/img/octicons/download-pdf.png"
                                                 class="icon-download"></li>
                                     </ul>
                                 </div>
@@ -896,7 +897,18 @@
         <img class="lateral-shapes lateral-shapes__left" src="../assets/img/cabiertas/left-shape.svg" alt="Imágen decorativa en el lateral izquierdo de la pantalla">
         <img class="lateral-shapes lateral-shapes__right" src="../assets/img/cabiertas/right-shape.svg" alt="Imágen decorativa en el lateral derecho de la pantalla">
     </div>
-
+		<!--
+	<div id="cookiesInfo">
+		<div class="container-info-label-cookies-info">
+			Utilizamos cookies propias y de terceros para analizar tu navegación de forma totalmente anonimizada con fines estadísticos. Para consultar más información visita nuestra página de
+			<a id="button-more-info-only" href="/avisoLegal/index.html" target="_blank">Política de cookies</a> o
+			<a id="button-more-info" href="/avisoLegal/index.html#ConfiguracionCookies" target="_blank">cambia la configuración de cookies</a>
+		</div>
+		<div class="container-cookies-acceptButton">
+			<a id="button-accept-cookies" href="#" onclick="acceptCookies();">Aceptar y seguir navegando</a>
+		</div>
+	</div>
+-->
     <footer class="footer">
         <div class="footer__content">
 
