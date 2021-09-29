@@ -1701,6 +1701,85 @@ video {
     margin-bottom: 1.428rem
 }
 
+.home-noticia__destacada--container-taller {
+    position: relative;
+    padding: 16px;
+    margin-right: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 22px -7px rgb(0 0 0 / 33%);
+    -moz-box-shadow: 0px 2px 22px -7px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 2px 22px -7px rgb(65 21 21 / 33%);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.home-noticia__destacada--subtitle {
+    color: #37b2ef;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    margin-top: 5px;
+}
+
+.home-noticia__destacada--pre-subtitle {
+    color: #ff7f40;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.home-noticia__destacada--container-taller__button {
+    width: 140px;
+    float: right;
+    margin-left: 10px;
+    top: 0px;
+    position: relative;
+}
+
+button.button-enroll {
+    width: 100%;
+    float: right;
+    background-color: #f23368;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: 3px 3px 6px -2px rgb(0 0 0 / 33%);
+    -moz-box-shadow: 3px 3px 6px -2px rgba(0, 0, 0, 0.33);
+    box-shadow: 3px 3px 6px -2px rgb(65 21 21 / 33%);
+}
+
+button.button-enroll:hover {
+    background-color: #eb0f4d;
+}
+
+.home-noticia__destacada--container-title{
+	width: 100%;
+	overflow: auto;
+}
+
+.home-noticia__destacada--container-taller__main {
+    width: calc(100% - 150px);
+    position: relative;
+    float: left;
+}
+
+.home-noticia__destacada--pre-subtitle__date {
+    font-style: italic;
+    color: #6c7a8c;
+    float: left;
+    margin-right: 10px;
+}
+
+.home-noticia__destacada--pre-subtitle__duration {
+    float: left;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
     .contact {
         padding: 0 20px 90px 20px
@@ -2708,4 +2787,14 @@ a#button-more-info, #button-more-info-only {
         text-align: center;
         margin-bottom: 20px;
     }
+}
+
+@media (max-width: 600px) {
+	.home-noticia__destacada--container-taller__button {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.home-noticia__destacada--container-taller__main {
+		width: calc(100%);
+	}
 }
