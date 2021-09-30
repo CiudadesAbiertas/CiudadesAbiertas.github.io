@@ -1780,6 +1780,59 @@ button.button-enroll:hover {
     float: left;
 }
 
+p.noticia-text.home-noticia__destacada--text {
+    float: left;
+}
+
+.container--header__baner {
+    width: 100%;
+    text-align: center;
+    background-color: #f23268;
+    padding: 20px 10px 20px 10px;
+    position: fixed;
+    z-index: 10;
+    color: white;
+}
+
+.container--header__baner__text {
+	font-size: 14px;
+	text-transform:uppercase;
+	color: white;
+	font-weight: bold;
+}
+
+.container--header__baner__parpadea {
+	animation-name: container--header__baner__parpadea;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name:container--header__baner__parpadea;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+
+@-moz-keyframes container--header__baner__parpadea{  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes container--header__baner__parpadea {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes container--header__baner__parpadea {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+
 @media (min-width: 768px) and (max-width: 992px) {
     .contact {
         padding: 0 20px 90px 20px

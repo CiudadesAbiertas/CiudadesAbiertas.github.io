@@ -23,6 +23,7 @@
     width: 100%;
     height: 710px;
     position: relative;
+	padding-top: 40px;
 }
 
 
@@ -506,6 +507,13 @@
     .situacion-box:nth-child(4) {
         margin-right: 0;
     }
+}
+
+@media screen and (max-width: 789px) {
+	.noticia-container {
+		max-width: 98%;
+		padding-bottom: 10px;
+	}
 }
 
 @media screen and (max-width: 576px) {
