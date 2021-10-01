@@ -1994,8 +1994,14 @@ p.noticia-text.home-noticia__destacada--text {
     margin: 0
 }
 
-.footer__logos-bottom {
-    margin-top: 35px
+.footer__logos-bottom, .footer__logos-slogan{
+    margin-top: 25px;
+}
+
+.footer__logos-bottom li:nth-child(2),
+.footer__logos-bottom li:nth-child(3),
+.footer__logos-bottom li:nth-child(4){
+    margin-left: 25px;
 }
 
 .footer__logoGobEspaña {
@@ -2029,13 +2035,17 @@ p.noticia-text.home-noticia__destacada--text {
     width: 264px
 }
 
+.footer__slogan {
+    width: 350px;
+}
+
 .footer__logoCiudadesInteligentes {
     width: 141px
 }
 
 .footer__logoUnionEuropea {
-    width: 355px;
-    margin-left: 88px
+    width: 125px;
+    margin-left: 65px
 }
 
 .footer__logoCiudadesAbiertas {
@@ -2110,8 +2120,11 @@ p.noticia-text.home-noticia__destacada--text {
         width: 115px
     }
     .footer__logoUnionEuropea {
-        width: 290px;
-        margin-left: 70px
+        width: 110px;
+        margin-left: 64px;
+    }
+    .footer__slogan{
+        width: 290px !important;
     }
 }
 
@@ -2131,23 +2144,29 @@ p.noticia-text.home-noticia__destacada--text {
         max-height: 23px !important;
     }
     .footer__logoAcoruña {
-        width: 151px
+        width: 151px;
     }
     .footer__logoMadrid {
-        width: 85px
+        width: 85px;
     }
     .footer__logoSantiago {
-        width: 180px
+        width: 180px;
     }
     .footer__logoZaragoza {
-        width: 152px
+        width: 152px;
     }
     .footer__logoCiudadesInteligentes {
-        width: 80px
+        width: 80px;
     }
     .footer__logoUnionEuropea {
-        width: 225px;
-        margin-left: 48px
+        width: 90px;
+        margin-left: 48px;
+    }
+    .footer__logos-bottom, .footer__logos-slogan {
+        margin-top: 15px;
+    }
+     .footer__slogan{
+        width: 220px !important;
     }
 }
 
@@ -2252,7 +2271,7 @@ p.noticia-text.home-noticia__destacada--text {
         width: 115px
     }
     .footer__logoUnionEuropea {
-        width: 290px
+        width: 130px;
     }
     .footer__bottom::before {
         content: ' ';
@@ -2273,6 +2292,12 @@ p.noticia-text.home-noticia__destacada--text {
         position: inherit;
         text-align: center;
         margin-top: 20px
+    }
+	.footer__logos-bottom li:nth-child(2), .footer__logos-bottom li:nth-child(3), .footer__logos-bottom li:nth-child(4) {
+        margin-left: 0px;
+    }
+    .footer__slogan{
+        width: 260px !important;
     }
 }
 
@@ -2642,6 +2667,10 @@ ol.lista__custom__second li.list__element__numbered {
 .presentacion-documentation__right-info img {
     float: right;
     max-width: 380px;
+}
+
+.footer__logos-top li:nth-child(1) img, .footer__logos-top li:nth-child(2), .footer__logos-top li:nth-child(3) img{
+    padding-bottom: 24px !important;
 }
 
 @media (min-width:1024px) and (max-width: 1200px) {
