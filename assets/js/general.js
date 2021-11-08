@@ -221,3 +221,48 @@ jQuery(document).ready(function() {
         });
     });
 });
+
+// Videos webinar YT
+function changeVideoView(id_taller) {
+	if( id_taller != null && id_taller != '' ){
+		$('div[id^="container__webinars--taller"]').removeClass("active");
+		if(id_taller == 'taller1'){
+			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/LR3xkWU3Aqs';
+			$("#container__webinars--taller1").addClass("active");
+			document.getElementById('download--pdf--webinar__button').href = 'index.html';
+			document.getElementById('download--pdf--webinar__button').download ="taller_1_presentacion";
+		}else if(id_taller == 'taller2'){
+			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/f1ZhTfBlm0M';
+			$("#container__webinars--taller2").addClass("active");
+			document.getElementById('download--pdf--webinar__button').href = 'index.html';
+			document.getElementById('download--pdf--webinar__button').download ="taller_2_presentacion";
+			
+		}else if(id_taller == 'taller3'){
+			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/dUxZkn3Qnwo';
+			$("#container__webinars--taller3").addClass("active");
+			document.getElementById('download--pdf--webinar__button').href = 'index.html';
+			document.getElementById('download--pdf--webinar__button').download ="taller_3_presentacion";
+			
+		}else if(id_taller == 'taller4'){
+			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/HX46ITJ1b-o';
+			$("#container__webinars--taller4").addClass("active");
+			document.getElementById('download--pdf--webinar__button').href = 'index.html';
+			document.getElementById('download--pdf--webinar__button').download ="taller_4_presentacion";
+			
+		}else if(id_taller == 'taller5'){
+			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/TxbHD_XacLg';
+			$("#container__webinars--taller5").addClass("active");
+			document.getElementById('download--pdf--webinar__button').href = 'index.html';
+			document.getElementById('download--pdf--webinar__button').download ="taller_5_presentacion";
+			
+		}else if(id_taller == 'taller6'){
+			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/zmcF5dxEre0';
+			$("#container__webinars--taller6").addClass("active");
+			document.getElementById('download--pdf--webinar__button').href = 'index.html';
+			document.getElementById('download--pdf--webinar__button').download ="taller_6_presentacion";
+		}
+	}
+}
+
+
+
