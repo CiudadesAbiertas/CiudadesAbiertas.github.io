@@ -229,37 +229,37 @@ function changeVideoView(id_taller) {
 		if(id_taller == 'taller1'){
 			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/LR3xkWU3Aqs';
 			$("#container__webinars--taller1").addClass("active");
-			document.getElementById('download--pdf--webinar__button').href = 'index.html';
-			document.getElementById('download--pdf--webinar__button').download ="taller_1_presentacion";
+			document.getElementById('download--pdf--webinar__button').href = '../assets/doc/Presentaciones/CiudadesAbiertas-Taller1-Introduccion.zip';
+			document.getElementById('download--pdf--webinar__button').download ="CiudadesAbiertas-Taller1-Introduccion";
 		}else if(id_taller == 'taller2'){
 			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/f1ZhTfBlm0M';
 			$("#container__webinars--taller2").addClass("active");
-			document.getElementById('download--pdf--webinar__button').href = 'index.html';
-			document.getElementById('download--pdf--webinar__button').download ="taller_2_presentacion";
+			document.getElementById('download--pdf--webinar__button').href = '../assets/doc/Presentaciones/CiudadesAbiertas-Taller2-Datos abiertos.zip';
+			document.getElementById('download--pdf--webinar__button').download ="CiudadesAbiertas-Taller2-Datos abiertos";
 			
 		}else if(id_taller == 'taller3'){
 			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/dUxZkn3Qnwo';
 			$("#container__webinars--taller3").addClass("active");
-			document.getElementById('download--pdf--webinar__button').href = 'index.html';
-			document.getElementById('download--pdf--webinar__button').download ="taller_3_presentacion";
+			document.getElementById('download--pdf--webinar__button').href = '../assets/doc/Presentaciones/CiudadesAbiertas-Taller3-Vocabularios-121-17-SP_v2.pdf';
+			document.getElementById('download--pdf--webinar__button').download ="CiudadesAbiertas-Taller3-Vocabularios";
 			
 		}else if(id_taller == 'taller4'){
 			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/HX46ITJ1b-o';
 			$("#container__webinars--taller4").addClass("active");
-			document.getElementById('download--pdf--webinar__button').href = 'index.html';
-			document.getElementById('download--pdf--webinar__button').download ="taller_4_presentacion";
+			document.getElementById('download--pdf--webinar__button').href = '../assets/doc/Presentaciones/CiudadesAbiertas-Taller4-Visualizaciones-121-17-SP_v5.pdf';
+			document.getElementById('download--pdf--webinar__button').download ="CiudadesAbiertas-Taller4";
 			
 		}else if(id_taller == 'taller5'){
 			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/TxbHD_XacLg';
 			$("#container__webinars--taller5").addClass("active");
-			document.getElementById('download--pdf--webinar__button').href = 'index.html';
-			document.getElementById('download--pdf--webinar__button').download ="taller_5_presentacion";
+			document.getElementById('download--pdf--webinar__button').href = '../assets/doc/Presentaciones/CiudadesAbiertas-Taller5-Transparencia-121-17-SP_v6.pdf';
+			document.getElementById('download--pdf--webinar__button').download ="CiudadesAbiertas-Taller5-Transparencia";
 			
 		}else if(id_taller == 'taller6'){
 			document.getElementById('iframe--yt').src = 'https://www.youtube.com/embed/zmcF5dxEre0';
 			$("#container__webinars--taller6").addClass("active");
-			document.getElementById('download--pdf--webinar__button').href = 'index.html';
-			document.getElementById('download--pdf--webinar__button').download ="taller_6_presentacion";
+			document.getElementById('download--pdf--webinar__button').href = '../assets/doc/Presentaciones/CiudadesAbiertas-Taller6-Participacion.zip';
+			document.getElementById('download--pdf--webinar__button').download ="CiudadesAbiertas-Taller6-Participacion";
 		}
 	}
 }
