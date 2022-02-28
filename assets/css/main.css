@@ -266,6 +266,9 @@ table td:last-child {
     min-width: 300px
 }
 
+.margin-bottom-40{
+	margin-bottom: 40px;
+}
 
 ::-webkit-scrollbar {
     -webkit-border-radius: 5px;
@@ -1780,6 +1783,22 @@ button.button-enroll {
     -webkit-box-shadow: 3px 3px 6px -2px rgb(0 0 0 / 33%);
     -moz-box-shadow: 3px 3px 6px -2px rgba(0, 0, 0, 0.33);
     box-shadow: 3px 3px 6px -2px rgb(65 21 21 / 33%);
+}
+
+.blue-background{
+    background-color: #37b2ef !important;
+}
+
+img.icon-button-report {
+    position: absolute;
+    width: 20px;
+    margin: 10px 15px;
+}
+
+img.icon-button-report-eye {
+    position: absolute;
+    width: 22px;
+    margin: 15px 15px;
 }
 
 .download--pdf--webinar {
