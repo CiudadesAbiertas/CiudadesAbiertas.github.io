@@ -26,9 +26,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
 
-    <!-- Canonical -->
-    <link rel="canonical" href="http://0.0.0.0:4000/tranparencia/">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -129,17 +126,17 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active transparencia-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item transparencia-color ">
-                                <a href="#" title="Visualizaciones" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                <a href="#" title="Visualizaciones" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel4">
                                     <h3 class="tabs__list__title">Visualizaciones</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item transparencia-color ">
-                                <a href="#" title="Portales" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" aria-controls="tabPanel5">
+                                <a href="#" title="Portales" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel5">
                                     <h3 class="tabs__list__title">Portales de Transparencia</h3>
                                 </a>
                             </li>
@@ -267,11 +264,11 @@
                                             GeoJSON, SHP.</li>
                                         <li><a href="http://geojson.io" target="_blank">Geojson.io</a>: permite visualizar y editar datos geográficos en formato GeoJSON, así como exportar a un gran número de formatos.</li>
                                     </ul>
-                                    <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Integracion_Sistemas_Visualizacion-121-17-SP.pdf" target="_blank">Informe con el Análisis de Sistemas Externos de Visualización</a>                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
+                                    <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Integracion_Sistemas_Visualizacion-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Informe con el Análisis de Sistemas Externos de Visualización')">Informe con el Análisis de Sistemas Externos de Visualización</a> <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
                                     <p class="cabiertas__text">Adicionalmente se ha desarrollado una extensión para CKAN del tipo de “Open with Apps” (similar a la que se puede encontrar en <a href="https://www.data.gov/" target="_blank">data.gov</a>) que permite la integración
                                         sencilla con este tipo de herramientas. Funcionalmente, la extensión muestra de forma automática un enlace para la visualización de los recursos de CKAN en las herramientas externas de visualización seleccionadas
                                         (Plotly, Carto y Geojson.io) dependiendo del formato de los recursos. Si el recurso no es compatible con ninguno de los tipos de fichero contemplados entonces el enlace no se muestra.</p>
-                                    <p class="cabiertas__text">La extensión, denominada <strong>“Abrir Con”</strong>, está publicada en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. Para cualquier consulta acerca del funcionamiento
+                                    <p class="cabiertas__text">La extensión, denominada <strong>“Abrir Con”</strong>, está publicada en la <a href="https://github.com/CiudadesAbiertas" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'GitHub: Abrir Con')">cuenta de GitHub del proyecto</a>. Para cualquier consulta acerca del funcionamiento
                                         de la misma se puede poner en contacto con nosotros a través del <a href="https://ciudadesabiertas.es/contacto/index.html">punto de contacto</a>.</p>
                                 </div>
 
@@ -282,7 +279,7 @@
                                         basado en CKAN.</p>
                                     <p class="cabiertas__text">En el análisis se han cubierto los siguientes tipos de visualización: tablas, mapas (visualización de información georreferenciada), gráficas y dashboard (tablero de visualizaciones).</p>
                                     <p class="cabiertas__text">Para determinar las extensiones a analizar se han explorado tanto los directorios oficiales de extensiones de CKAN como diversos portales de datos abiertos basados en CKAN, así como otras fuentes de información.</p>
-                                    <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Extensiones_CKAN-121-17-SP.pdf" target="_blank">Informe con el Análisis de las Extensiones de Visualización para CKAN</a>                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
+                                    <p class="cabiertas__text">En el siguiente enlace se puede descargar el <a href="../assets/doc/CiudadesAbiertas-T5-Analisis_Extensiones_CKAN-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Informe con el Análisis de las Extensiones de Visualización para CKAN')">Informe con el Análisis de las Extensiones de Visualización para CKAN</a> <img src="../assets/img/octicons/download-pdf.png" class="icon-download"></p>
                                 </div>
 
                                 <div class="lineasActuacion__section">
@@ -299,7 +296,7 @@
                                     <p class="cabiertas__text">Otra medida para eliminar dependencias se fundamenta en que los datos que se muestran en las gráficas se consultan mediante la especificación de API de datos abiertos definida en otra actuación del proyecto, que a su
                                         vez está basada en vocabularios consensuados y que permite la descarga de los datos en formatos reutilizables (en concreto, para las visualizaciones se consumen los datos en formato JSON). De esta forma, cualquier
                                         organismo que desee reutilizar estas visualizaciones sólo se deberá preocupar en implementar la especificación de la API de Ciudades Abiertas y configurar las visualizaciones para que utilicen esta API.</p>
-                                    <p class="cabiertas__text">Las visualizaciones se encuentran publicadas en la <a href="https://github.com/CiudadesAbiertas" target="_blank">cuenta de GitHub del proyecto</a>. A continuación se detallan las aplicaciones de visualización contempladas
+                                    <p class="cabiertas__text">Las visualizaciones se encuentran publicadas en la <a href="https://github.com/CiudadesAbiertas" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'GitHub: Visualizaciones')">cuenta de GitHub del proyecto</a>. A continuación se detallan las aplicaciones de visualización contempladas
                                         en el proyecto.</p>
                                     <h2 class="cabiertas__subtitle">Organización-Organigrama</h2>
                                     <p class="cabiertas__text">Su finalidad es disponer de una visualización que permita a los ciudadanos consultar de forma gráfica e interactiva la información correspondiente a la estructura de un organismo.</p>
@@ -326,10 +323,10 @@
                                         A continuación se proporcionan los enlaces a los Portales de Transparencia que los ayuntamientos participantes en Ciudades Abiertas ponen a disposición de los ciudadanos:</p>
                                     <p class="cabiertas__text"></p>
                                     <ul class="cabiertas__list">
-                                        <li><a href="https://www.coruna.gal/transparencia" target="_blank">Portal de Transparencia de A Coruña</a></li>
-                                        <li><a href="https://transparencia.madrid.es/" target="_blank">Portal de Transparencia de Madrid</a></li>
-                                        <li><a href="https://transparencia.santiagodecompostela.gal/portada/gl" target="_blank">Portal de Transparencia de Santiago de Compostela</a></li>
-                                        <li><a href="https://www.zaragoza.es/sede/servicio/transparencia/" target="_blank">Portal de Transparencia de Zaragoza</a></li>
+                                        <li><a href="https://www.coruna.gal/transparencia" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Transparencia A Coruña')">Portal de Transparencia de A Coruña</a></li>
+                                        <li><a href="https://transparencia.madrid.es/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Transparencia Madrid')">Portal de Transparencia de Madrid</a></li>
+                                        <li><a href="https://transparencia.santiagodecompostela.gal/portada/gl" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Transparencia Santiago')">Portal de Transparencia de Santiago de Compostela</a></li>
+                                        <li><a href="https://www.zaragoza.es/sede/servicio/transparencia/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Transparencia Zaragoza')">Portal de Transparencia de Zaragoza</a></li>
                                     </ul>
                                 </div>
 

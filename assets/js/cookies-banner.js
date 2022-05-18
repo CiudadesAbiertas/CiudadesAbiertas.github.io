@@ -1,10 +1,10 @@
 /* JS to manage Ciudades Abiertas cookies  */
-	
+
 jQuery(document).ready(function() {
-	document.getElementById("cookiesInfo").style.display = "none";
-	
+	//document.getElementById("cookiesInfo").style.display = "none";
+
 	trackUserAction();
-	
+
 });
 
 "use strict";
@@ -18,18 +18,18 @@ jQuery(document).ready(function() {
 function captureInPageLink(eventCategory, eventAction, eventLabel) {
 		ga('send', 'event', eventCategory, eventAction, eventLabel);
 }
-	
+
 function trackUserAction(){
-	
+
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-179393538-1', 'auto');
-		
+
 		var urlToSave = location.pathname + location.hash;
-		
+
 		//Para todos los hits. Para convertir en anónima la dirección IP de todos los hits que se envían desde un único objeto de seguimiento, usa el comando set para asignar el valor anonymizeIp al campo true de ese objeto:
 		ga('set', 'anonymizeIp', true);
 		ga('send', {

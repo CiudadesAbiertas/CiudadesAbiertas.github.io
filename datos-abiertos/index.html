@@ -26,9 +26,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
 
-    <!-- Canonical -->
-    <link rel="canonical" href="../index.html">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -129,27 +126,27 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active datosAbiertos-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="APIOpenCity" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" aria-controls="tabPanel2">
+                                <a href="#" title="APIOpenCity" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel2">
                                     <h3 class="tabs__list__title">API OpenCity</h3>
                                 </a>
                             </li>
 							 <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="Informes" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" aria-controls="tabPanel3">
+                                <a href="#" title="Informes" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel3">
                                     <h3 class="tabs__list__title">Informes</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="InfraestructuraTecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                                <a href="#" title="InfraestructuraTecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel4">
                                     <h3 class="tabs__list__title">Infraestructura Tecnológica</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="Portales" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" aria-controls="tabPanel5">
+                                <a href="#" title="Portales" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel5">
                                     <h3 class="tabs__list__title">Portales de Datos Abiertos</h3>
                                 </a>
                             </li>
@@ -247,22 +244,22 @@
                                     </ul>
                                     <p class="cabiertas__text">Para favorecer la adopción de esta API Ciudades Abiertas, el proceso de instalación de su Implementación de Referencia es fácil y sencillo. La API está organizada de forma modular, lo que permite seleccionar los módulos
                                         que se desean utilizar.</p>
-                                    <p class="cabiertas__text">Tanto la especificación de la API Ciudades Abiertas como su Implementación de Referencia se encuentran disponibles en el repositorio <a href="https://github.com/CiudadesAbiertas/CiudadesAbiertas-API" target="_blank">CiudadesAbiertas-API</a> de la cuenta de GitHub del proyecto.</p>
+                                    <p class="cabiertas__text">Tanto la especificación de la API Ciudades Abiertas como su Implementación de Referencia se encuentran disponibles en el repositorio <a href="https://github.com/CiudadesAbiertas/CiudadesAbiertas-API" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'GitHub: API Ciudades Abiertas')">CiudadesAbiertas-API</a> de la cuenta de GitHub del proyecto.</p>
                                     <h2 class="cabiertas__title">OpenCity-ext</h2>
                                     <p class="cabiertas__text">Aunque se ha desarrollado el API REST de Datos genérica, la versión existente en el Ayuntamiento de Zaragoza, que se ha usado como base para el nuevo desarrollo, seguirá disponible en <a href="https://www.zaragoza.es/docs-api_sede/"
                                             target="_blank">https://www.zaragoza.es/docs-api_sede/</a>.</p>
                                     <p class="cabiertas__text">Esta API REST llamada <strong>opencity-ext</strong>, permite el acceso a los datos de diferentes servicios que el Ayuntamiento de Zaragoza pone a disposición de los usuarios para su consulta y reutilización, mediante
                                         su aprobación.</p>
                                     <p class="cabiertas__text">En esta actuación se han realizado trabajos de modularización de ciertos componentes ya desarrollados en Zaragoza. Este trabajo de modularización ha permitido que puedan ser utilizados de manera independiente del resto de componentes existentes en la plataforma, es decir, si un usuario/entidad/organismo quiere utilizar el servicio de Mapas Colaborativos se podrá descargar dicho módulo y no todos los servicios existentes.</p>
-									<p class="cabiertas__text">Este trabajo se ha puesto a disposición de otras administraciones en el <a href="https://administracionelectronica.gob.es/ctt/" target="_blank">Centro de Transferencias Tecnológicas</a></p>
+									<p class="cabiertas__text">Este trabajo se ha puesto a disposición de otras administraciones en el <a href="https://administracionelectronica.gob.es/ctt/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'CTT')">Centro de Transferencias Tecnológicas</a></p>
 
 									<ol class="lista__custom__second">
 
                                         <li class="list__element__numbered">
-                                            <div class="lineasActuacion__section"><a href="https://administracionelectronica.gob.es/ctt/qyszgz" target="_blank"><strong>Quejas y Sugerencias - Open City Zaragoza</strong></a>: A través del Servicio de Quejas y Sugerencias la ciudadanía puede comunicar al Ayuntamiento todas sus inquietudes, intereses y reclamaciones, con la confianza de recibir en toda ocasión una respuesta personalizada.</div>
+                                            <div class="lineasActuacion__section"><a href="https://administracionelectronica.gob.es/ctt/qyszgz" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'CTT: Quejas y Sugerencias')"><strong>Quejas y Sugerencias - Open City Zaragoza</strong></a>: A través del Servicio de Quejas y Sugerencias la ciudadanía puede comunicar al Ayuntamiento todas sus inquietudes, intereses y reclamaciones, con la confianza de recibir en toda ocasión una respuesta personalizada.</div>
                                         </li>
 										<li class="list__element__numbered">
-                                            <div class="lineasActuacion__section"><a href="https://administracionelectronica.gob.es/ctt/mapascolab" target="_blank"><strong>Mapas Colaborativos - Open City Zaragoza</strong></a>: El sistema de Mapas colaborativos desarrollado por el Ayuntamiento de Zaragoza permite la creación de Mapas Colaborativos como un instrumento de participación, colaboración y co-creación.</div>
+                                            <div class="lineasActuacion__section"><a href="https://administracionelectronica.gob.es/ctt/mapascolab" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'CTT: Mapas Colaborativos')"><strong>Mapas Colaborativos - Open City Zaragoza</strong></a>: El sistema de Mapas colaborativos desarrollado por el Ayuntamiento de Zaragoza permite la creación de Mapas Colaborativos como un instrumento de participación, colaboración y co-creación.</div>
                                         </li>
                                     </ol>
 
@@ -417,10 +414,10 @@
                                     <p class="cabiertas__text"></p>
                                     <p class="cabiertas__text"></p>
                                     <ul class="cabiertas__list">
-                                        <li><a href="https://smart.coruna.es/OpenData/" target="_blank">Portal de Datos Abiertos de A Coruña</a></li>
-                                        <li><a href="https://datos.madrid.es/" target="_blank">Portal de Datos Abiertos de Madrid</a></li>
-                                        <li><a href="https://datos.santiagodecompostela.gal/" target="_blank">Portal de Datos Abiertos de Santiago de Compostela</a></li>
-                                        <li><a href="https://www.zaragoza.es/sede/portal/datos-abiertos/" target="_blank">Portal de Datos Abiertos de Zaragoza</a></li>
+                                        <li><a href="https://smart.coruna.es/OpenData/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Datos Abiertos A Coruña')">Portal de Datos Abiertos de A Coruña</a></li>
+                                        <li><a href="https://datos.madrid.es/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Datos Abiertos Madrid')">Portal de Datos Abiertos de Madrid</a></li>
+                                        <li><a href="https://datos.santiagodecompostela.gal/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Datos Abiertos Santiago')">Portal de Datos Abiertos de Santiago de Compostela</a></li>
+                                        <li><a href="https://www.zaragoza.es/sede/portal/datos-abiertos/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Datos Abiertos Zaragoza')">Portal de Datos Abiertos de Zaragoza</a></li>
                                     </ul>
                                 </div>
 

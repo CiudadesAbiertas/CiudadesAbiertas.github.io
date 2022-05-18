@@ -26,9 +26,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
 
-    <!-- Canonical -->
-    <link rel="canonical" href="http://0.0.0.0:4000/participacion/">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -140,7 +137,7 @@
                             </li>
                             <!--
                          <li class="tabs__list__item js-tablist-item participacion-color ">
-                              <a href="#" title="PlataformaConsul" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" aria-controls="tabPanel4">
+                              <a href="#" title="PlataformaConsul" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel4">
                                    <h3 class="tabs__list__title">Plataforma Consul</h3>
                               </a>
                          </li>
@@ -350,7 +347,7 @@
                                         </thead>
                                         <tbody class="content__procesoparticipativo_table">
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Iniciativa-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Iniciativa Popular')">Iniciativa Popular</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Iniciativa-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Iniciativa Popular')">Iniciativa Popular</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -359,7 +356,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Consulta Popular')">Consulta Popular</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Consulta Popular')">Consulta Popular</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -368,49 +365,49 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta_Reglamentos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Consulta Publica Previa en la Elaboracion de Ordenanzas y Reglamentos')">Consulta Pública Previa en la Elaboración de Ordenanzas y Reglamentos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Consulta_Reglamentos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Consulta Publica Previa en la Elaboracion de Ordenanzas y Reglamentos')">Consulta Pública Previa en la Elaboración de Ordenanzas y Reglamentos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
                                                     <p class="cabiertas__text__uncollapse-text">Consulta pública previa a la elaboración de las normas reglamentarias locales en la que se recaba opinión acerca de: (a) Problemas que se pretenden resolver con la iniciativa, (b) Necesidad y Oportunidad
                                                         de su aprobación, (c) Objetivos de la norma, y (d) Posibles soluciones alternativas regulatorias o no regulatorias. Una vez elaborado el proyecto normativo se puede realizar una segunda fase de audiencia
                                                         pública para debatir y recabar aportaciones adicionales.</p>
-                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación para la <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Consulta_Reglamentos_Zaragoza-121-17-SP.pdf" target="_blank">Consulta pública previa a la elaboración de la Ordenanza de Protección contra la Contaminación Acústica del Ayuntamiento de Zaragoza</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
+                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación para la <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Consulta_Reglamentos_Zaragoza-121-17-SP.pdf" target="_blank"onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Ejemplo de Proceso de Participacion: Consulta Publica Previa en la Elaboracion de Ordenanzas y Reglamentos')">Consulta pública previa a la elaboración de la Ordenanza de Protección contra la Contaminación Acústica del Ayuntamiento de Zaragoza</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Propuesta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Propuesta Ciudadana')">Propuesta Ciudadana</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Propuesta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Propuesta Ciudadana')">Propuesta Ciudadana</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
                                                     <p class="cabiertas__text__uncollapse-text">Propuestas de actuación de competencia e interés público municipal. Puede estar abierta para apoyos y puede pasar a segunda fase de propuesta colectiva y resolución si tiene un cierto porcentaje de apoyos.
                                                         La iniciativa puede referirse a la presentación de proyectos de reglamento en materia de competencia municipal (Iniciativa Legislativa Popular). Además, una petición o pregunta de la ciudadanía se
                                                         puede transformar en una Propuesta Ciudadana.</p>
-                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación en la <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Propuesta_Puerto-121-17-SP.pdf" target="_blank">Propuesta Ciudadana para el Concurso de Ideas para el Puerto (A Coruña)</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
+                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación en la <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Propuesta_Puerto-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Ejemplo de Proceso de Participacion: Propuesta Ciudadana')">Propuesta Ciudadana para el Concurso de Ideas para el Puerto (A Coruña)</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Audiencia-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Audiencia Publica')">Audiencia Pública</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Audiencia-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Audiencia Publica')">Audiencia Pública</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
                                                     <p class="cabiertas__text__uncollapse-text">Espacio de deliberación participativa para dar a conocer iniciativas municipales y debatirlas. Puede formar parte de otros procesos tales como los de Consulta Pública Previa y Presupuestos Participativos.
                                                     </p>
-                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación en la implantación del <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Foro_Santiago-121-17-SP.pdf" target="_blank">Foro Ciudadano Ao Vivo en el Ayuntamiento de Santiago de Compostela</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
+                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación en la implantación del <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Foro_Santiago-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Ejemplo de Proceso de Participacion: Audiencia Publica')">Foro Ciudadano Ao Vivo en el Ayuntamiento de Santiago de Compostela</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Presupuestos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Presupuestos Participativos')">Presupuestos Participativos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Presupuestos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Presupuestos Participativos')">Presupuestos Participativos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
                                                     <p class="cabiertas__text__uncollapse-text">Procesos democráticos en los que la ciudadanía decide de manera directa a qué se destina una parte del presupuesto municipal. Se pueden realizar propuestas para determinados capítulos de gastos del ayuntamiento
                                                         y se asigna cierta cantidad del presupuesto con una distribución territorial y por áreas temáticas.</p>
-                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación para los <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Presupuestos_Madrid-121-17-SP.pdf" target="_blank">Presupuestos Participativos del año 2019 en el Ayuntamiento de Madrid</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
+                                                    <p class="cabiertas__text__uncollapse-text">Se proporciona un ejemplo de su aplicación para los <a href="../assets/doc/CiudadesAbiertas-P1-Ejemplo_Proceso_Presupuestos_Madrid-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Ejemplo de Proceso de Participacion: Presupuestos Participativos')">Presupuestos Participativos del año 2019 en el Ayuntamiento de Madrid</a>                                                        <img src="../assets/img/octicons/download-pdf.png" class="icon-download">.</p>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Legislacion-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Legislacion Colaborativa')">Legislación Colaborativa</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Legislacion-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Legislacion Colaborativa')">Legislación Colaborativa</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -419,7 +416,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Diseno_Urbano-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Disenyo Urbano Colaborativo')">Diseño Urbano Colaborativo</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Diseno_Urbano-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Disenyo Urbano Colaborativo')">Diseño Urbano Colaborativo</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -428,7 +425,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Encuesta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Encuesta Ciudadana')">Encuesta Ciudadana</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Encuesta-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Encuesta Ciudadana')">Encuesta Ciudadana</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -437,7 +434,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Quejas y Sugerencias')">Quejas y Sugerencias</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Quejas y Sugerencias')">Quejas y Sugerencias</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -445,7 +442,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Auditoria-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Auditoria Ciudadana')">Auditoría Ciudadana</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Proceso_Auditoria-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Proceso de Participacion: Auditoria Ciudadana')">Auditoría Ciudadana</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -468,7 +465,7 @@
                                         </thead>
                                         <tbody class="content__procesoparticipativo_table">
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Propuestas-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Creacion de Propuestas')">Creación de Propuestas</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Propuestas-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Creacion de Propuestas')">Creación de Propuestas</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -476,7 +473,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Votaciones-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Votaciones')">Votaciones</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Votaciones-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Votaciones')">Votaciones</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -486,7 +483,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Debate_Apoyos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Debate y Apoyos')">Debate y Apoyos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Debate_Apoyos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Debate y Apoyos')">Debate y Apoyos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -498,7 +495,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Formularios-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Gestion de Formularios')">Gestión de Formularios</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Formularios-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Gestion de Formularios')">Gestión de Formularios</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -507,7 +504,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Mapas_Colaborativos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Mapas Colaborativos')">Mapas Colaborativos</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Mapas_Colaborativos-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Mapas Colaborativos')">Mapas Colaborativos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -516,7 +513,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Quejas y Sugerencias')">Quejas y Sugerencias</a>
+                                                <td nowrap><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Quejas_Sugerencias-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Quejas y Sugerencias')">Quejas y Sugerencias</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -526,7 +523,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Informes-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Gestion de Informes Tecnicos')">Gestión de Informes Técnicos</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Informes-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Gestion de Informes Tecnicos')">Gestión de Informes Técnicos</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -540,7 +537,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Participantes-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Registro de Personas Participantes')">Registro de Personas Participantes</a>
+                                                <td><a href="../assets/doc/CiudadesAbiertas-P1-Ficha_Instrumento_Participantes-121-17-SP.pdf" target="_blank" onclick="captureInPageLink('Enlace Interno', 'Descarga', 'Instrumento de Participacion: Registro de Personas Participantes')">Registro de Personas Participantes</a>
                                                     <img src="../assets/img/octicons/download-pdf.png" class="icon-download">
                                                 </td>
                                                 <td>
@@ -891,10 +888,10 @@
                                     <p class="cabiertas__text" style="margin-bottom: 15px;">Los ayuntamientos participantes en el proyecto disponen de plataformas que agrupan los diversos procesos participativos en los que los ciudadanos pueden participar.
                                         A continuación se proporcionan los enlaces a estas plataformas:</p>
                                     <ul class="cabiertas__list">
-                                        <li><a href="https://aportaaberta.coruna.es/" target="_blank">Plataforma de Participación de A Coruña: A Porta Aberta</a></li>
-                                        <li><a href="https://decide.madrid.es/" target="_blank">Plataforma de Participación de Madrid: Decide Madrid</a></li>
-                                        <li><a href="http://www.santiagodecompostela.org/orzamentosparticipativos/" target="_blank">Plataforma de Participación de Santiago de Compostela</a></li>
-                                        <li><a href="https://www.zaragoza.es/sede/portal/gobierno-abierto/" target="_blank">Plataforma de Participación de Zaragoza (ideaZaragoza)</a></li>
+                                        <li><a href="https://aportaaberta.coruna.es/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Participacion A Coruña')">Plataforma de Participación de A Coruña: A Porta Aberta</a></li>
+                                        <li><a href="https://decide.madrid.es/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Participacion Madrid')">Plataforma de Participación de Madrid: Decide Madrid</a></li>
+                                        <li><a href="http://www.santiagodecompostela.org/orzamentosparticipativos/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Participacion Santiago')">Plataforma de Participación de Santiago de Compostela</a></li>
+                                        <li><a href="https://www.zaragoza.es/sede/portal/gobierno-abierto/" target="_blank" onclick="captureInPageLink('Enlace Externo', 'Click', 'Portal Participacion Zaragoza')">Plataforma de Participación de Zaragoza (ideaZaragoza)</a></li>
                                     </ul>
                                 </div>
 
