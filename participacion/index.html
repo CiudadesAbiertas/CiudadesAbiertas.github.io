@@ -126,24 +126,24 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active participacion-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item participacion-color ">
-                                <a href="#" title="ProcesosParticipativos" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel2">
+                                <a href="#" title="ProcesosParticipativos" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel2">
                                     <h3 class="tabs__list__title">Procesos Participativos</h3>
                                 </a>
                             </li>
                             <!--
                          <li class="tabs__list__item js-tablist-item participacion-color ">
-                              <a href="#" title="PlataformaConsul" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel4">
+                              <a href="#" title="PlataformaConsul" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel4">
                                    <h3 class="tabs__list__title">Plataforma Consul</h3>
                               </a>
                          </li>
 -->
                             <li class="tabs__list__item js-tablist-item participacion-color ">
-                                <a href="#" title="Plataformas" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="trackUserAction()" aria-controls="tabPanel5">
+                                <a href="#" title="Plataformas" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel5">
                                     <h3 class="tabs__list__title">Plataformas de Participación Ciudadana</h3>
                                 </a>
                             </li>
@@ -1048,6 +1048,17 @@
     $('#inner').click(function(e) {
         e.stopPropagation();
     });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WVV3CGQ45M"></script>
+<script>
+
+$(document).ready(function() {	
+    window.dataLayer = window.dataLayer || [];
+    llamaGtag();
+  });
+
 </script>
 
 

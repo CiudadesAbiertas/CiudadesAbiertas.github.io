@@ -16,8 +16,29 @@ jQuery(document).ready(function() {
 * con "navigator.sendBeacon" en el navegador que lo admita.
 */
 function captureInPageLink(eventCategory, eventAction, eventLabel) {
-		ga('send', 'event', eventCategory, eventAction, eventLabel);
+		//ga('send', 'event', eventCategory, eventAction, eventLabel);
+
+		gtag('event', eventCategory, {
+			'eventLabel' : eventLabel
+		});
 }
+
+
+/* GA4 */
+function gtag(){dataLayer.push(arguments);}
+function llamaGtag(){
+
+
+	var urlToSave = location.pathname + location.hash;
+
+    gtag('js', new Date());
+    gtag('config', 'G-WVV3CGQ45M',{
+		//'etiqueta-pagina' : urlToSave,
+		'page_location' : urlToSave
+	});
+
+}
+/* FIN GA4 */
 
 function trackUserAction(){
 
