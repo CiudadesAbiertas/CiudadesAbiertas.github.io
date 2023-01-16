@@ -126,27 +126,27 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active datosAbiertos-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="APIOpenCity" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel2">
+                                <a href="#" title="APIOpenCity" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel2">
                                     <h3 class="tabs__list__title">API OpenCity</h3>
                                 </a>
                             </li>
 							 <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="Informes" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel3">
+                                <a href="#" title="Informes" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel3">
                                     <h3 class="tabs__list__title">Informes</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="InfraestructuraTecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel4">
+                                <a href="#" title="InfraestructuraTecnológica" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel4">
                                     <h3 class="tabs__list__title">Infraestructura Tecnológica</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item datosAbiertos-color ">
-                                <a href="#" title="Portales" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel5">
+                                <a href="#" title="Portales" class="tabs__list__link js-tablist-link" id="tab5-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel5">
                                     <h3 class="tabs__list__title">Portales de Datos Abiertos</h3>
                                 </a>
                             </li>
@@ -530,11 +530,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVV3CGQ45M"></script>
 <script>
 
-$(document).ready(function() {	
+$(document).ready(function() {
     window.dataLayer = window.dataLayer || [];
-    llamaGtag();
+    //llamaGtag();
   });
-  
+
 </script>
 
 </html>

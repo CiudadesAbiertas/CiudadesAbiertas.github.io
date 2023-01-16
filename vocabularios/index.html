@@ -126,22 +126,22 @@
                     <div class="tabs js js-tabs">
                         <ul role="tablist" class="tabs__list js-tabs-list">
                             <li class="tabs__list__item js-tablist-item active vocabulario-color ">
-                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel1">
+                                <a href="#" title="Descripción" class="tabs__list__link js-tablist-link" id="tab1-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel1">
                                     <h3 class="tabs__list__title">Descripción</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item vocabulario-color ">
-                                <a href="#" title="CatálogoVocabularios" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel2">
+                                <a href="#" title="CatálogoVocabularios" class="tabs__list__link js-tablist-link" id="tab2-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel2">
                                     <h3 class="tabs__list__title">Catálogo de Vocabularios</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item vocabulario-color ">
-                                <a href="#" title="SKOS" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel3">
+                                <a href="#" title="SKOS" class="tabs__list__link js-tablist-link" id="tab3-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel3">
                                     <h3 class="tabs__list__title">Catálogo de listas SKOS</h3>
                                 </a>
                             </li>
                             <li class="tabs__list__item js-tablist-item vocabulario-color ">
-                                <a href="#" title="VocabulariosReutilizados" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="llamaGtag()" aria-controls="tabPanel4">
+                                <a href="#" title="VocabulariosReutilizados" class="tabs__list__link js-tablist-link" id="tab4-label" role="tab" onclick="llamaGtag(this.title)" aria-controls="tabPanel4">
                                     <h3 class="tabs__list__title">Vocabularios Reutilizados</h3>
                                 </a>
                             </li>
@@ -2266,12 +2266,12 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVV3CGQ45M"></script>
 <script>
-    
-  w$(document).ready(function() {	
+
+  $(document).ready(function() {
     window.dataLayer = window.dataLayer || [];
-    llamaGtag();
+    //llamaGtag();
   });
-  
+
 </script>
 
 </html>

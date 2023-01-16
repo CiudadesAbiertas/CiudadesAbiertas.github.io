@@ -17,16 +17,20 @@ function captureInPageLink(eventCategory, eventAction, eventLabel) {
 
 
 function gtag(){dataLayer.push(arguments);}
-function llamaGtag(){
+function llamaGtag(newHash = null){
 
+     var urlToSave = location.pathname;
 
-	var urlToSave = location.pathname + location.hash;
+     if(newHash!==null){
+           urlToSave = urlToSave + '#' + newHash;
+     }else{
+           urlToSave = urlToSave + location.hash;
+     }
 
     gtag('js', new Date());
     gtag('config', 'G-WVV3CGQ45M',{
-		//'etiqueta-pagina' : urlToSave,
-		'page_location' : urlToSave
-	});
+           'page_location' : urlToSave
+     });
 
 }
 
